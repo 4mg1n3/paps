@@ -15,7 +15,8 @@ tagline: Partage Autour de la Psychomotricité au Sénégal
 logo:
 
 # A description of your site for social meta tag, search engines, and feed.xml
-description: | PAP'S
+description: |
+  Partage autour de la psychomotricité au sénégal
   
 
 # The subpath of your site, if you want to host your path on a subpath like on GitHub Pages. e.g. /blog
@@ -41,7 +42,7 @@ author_name: "a"
 author_bio: ""
 author_url: ""
 author_location: ""
-author_image: 
+author_image: authorimage.jpg
 
 # Footer ad banner
 banner_image: banner.jpg
