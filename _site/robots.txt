@@ -1,1 +1,0 @@
-Sitemap: http://localhost:4000/https://4mg1n3.github.io/paps/sitemap.xml
