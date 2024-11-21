@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Style Guide
+permalink: /styleguide/
 description: This is a style guide of the BlogInn Jekyll theme
 ---
 

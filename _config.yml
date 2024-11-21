@@ -19,7 +19,7 @@ description: |
   BlogBox is a bold theme for the Jekyll blogging platform. Available for purchase at ThemeForest.net.
 
 # The base hostname & protocol of your site for where absolute urls are needed
-url: https://blogbox.netlify.app
+url: https://4mg1n3.github.io/paps/
 
 # The subpath of your site, if you want to host your path on a subpath like on GitHub Pages. e.g. /blog
 baseurl:
@@ -34,7 +34,7 @@ navigation:
 - text: About
   url: /about/
 - text: Style Guide
-  url: /style-guide/
+  permalink: /style-guide/
 - text: Archives
   url: /tags/
 
