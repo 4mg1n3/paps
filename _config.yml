@@ -5,28 +5,26 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site title
+# Titre
 title: PAP'S
-
-# Below the site title
 tagline: Partage Autour de la Psychomotricité au Sénégal
 
 # Site logo
-logo:
+logo: 
 
 # A description of your site for social meta tag, search engines, and feed.xml
 description: |
-  Partage autour de la psychomotricité au sénégal
+  Partage autour de la psychomotricité au sénégal, PAP'S, Association Loi 1901
   
 
-# The subpath of your site, if you want to host your path on a subpath like on GitHub Pages. e.g. /blog
-baseurl: https://4mg1n3.github.io/paps/
+# Url de base -> host par Github pages
+baseurl: https://4mg1n3.github.io/paps
 
 
 sass:
   sass_dir: _sass
 
-# Site navigation - each item must have a title and a url.
+# Site navigation
 navigation:
 - text: Home
   url: /
@@ -37,21 +35,21 @@ navigation:
 - text: Archives
   url: /tags/
 
-# Author information - author info at the bottom of the post
-author_name: "a"
-author_bio: ""
-author_url: ""
-author_location: ""
-author_image: authorimage.jpg
+# Info perso (inutilisée)
+author_name:
+author_bio:
+author_url:
+author_location:
+author_image: 
 
-# Footer ad banner
-banner_image: banner.jpg
-banner_url: https://justgoodthemes.com/
+# Footer (inutilisée)
+banner_image: 
+banner_url: 
 
-# Footer newsletter widget - add your form action url for MailChimp signup form here
-mailchimp_url: ""
+# Footer url mailchimp pour forms (inutilisée)
+mailchimp_url:
 
-# Social links in the site footer
+# Liens réseaux sociaux
 twitter_username: "username"
 facebook_username: "username"
 github_username: "username"
