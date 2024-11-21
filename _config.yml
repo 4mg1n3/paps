@@ -6,23 +6,21 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site title
-title: BlogBox
+title: PAP'S
 
 # Below the site title
-tagline: Tales of a digital nomad.
+tagline: Partage Autour de la Psychomotricité au Sénégal
 
 # Site logo
 logo:
 
 # A description of your site for social meta tag, search engines, and feed.xml
-description: |
-  BlogBox is a bold theme for the Jekyll blogging platform. Available for purchase at ThemeForest.net.
-
-# The base hostname & protocol of your site for where absolute urls are needed
-baseurl: https://4mg1n3.github.io/paps/
+description: | PAP'S
+  
 
 # The subpath of your site, if you want to host your path on a subpath like on GitHub Pages. e.g. /blog
-baseurl:
+baseurl: https://4mg1n3.github.io/paps/
+
 
 sass:
   sass_dir: _sass
@@ -39,18 +37,18 @@ navigation:
   url: /tags/
 
 # Author information - author info at the bottom of the post
-author_name: "John Doe"
-author_bio: "My name is John Doe. I’m a full-time adventure travel blogger and photographer who’s been exploring the world for over 6 years."
-author_url: "https://justgoodthemes.com"
-author_location: "Vilnius, Lithuania"
-author_image: authorimage.jpg
+author_name: "a"
+author_bio: ""
+author_url: ""
+author_location: ""
+author_image: 
 
 # Footer ad banner
 banner_image: banner.jpg
 banner_url: https://justgoodthemes.com/
 
 # Footer newsletter widget - add your form action url for MailChimp signup form here
-mailchimp_url: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
+mailchimp_url: ""
 
 # Social links in the site footer
 twitter_username: "username"
