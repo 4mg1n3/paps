@@ -50,8 +50,8 @@ banner_url:
 mailchimp_url:
 
 # Liens réseaux sociaux
-twitter_username: "username"
-facebook_username: "username"
+# twitter_username: "username"
+# facebook_username: "username"
 github_username: "username"
 codepen_username: "username"
 dribbble_username: "username"
