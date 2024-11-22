@@ -1,24 +1,19 @@
 ---
 layout: page
 title: About this blog
-description: An optional about page for BlogBox Jekyll theme
+description: Nous sommes l'association PAP'S, association Loi 1901
 featured_image: aboutPage.jpg
 ---
 
-My name is John Doe. I’m a full-time adventure travel blogger and photographer who’s been exploring the world for over 5 years.
 
-Welcome to my blog and I absolutely appreciate you stopping by! On December 25th, 2001, I left the Canada for a four months, trip to Asia. The idea was to backpack around China, Thailand, Vietnam and Cambodia and then return home and start a career in the IT industry.
 
-When I landed in Bangkok, I had $3500 USD to my name and that was it. I booked a bed in a old guesthouse in the center of the city for about a dollar per night and let the adventure begin.
+PAPS est une association visant à développer la psychomotricité au Sénégal.
 
-> “To live is the rarest thing in the world. Most people exist, that is all.” <cite>― Oscar Wilde ―</cite>
-
-In the end, I never went home after those three months. And it’s now been over 14 years and that trip has still yet to finish.
-
-The adventure has involved over 75+ countries on 5 continents as I’ve worked, lived, traveled and volunteered all over the planet.
-
-Through my own adventures – from the incredible moments and rewarding interactions to the struggles and major challenges – I aim to provide a realistic and honest account of what long-term travel is truly about and how you can work on achieving such a goal yourself.
-
-While the recognition and mentions this blog has received over the years are certainly nice, nothing compares to an email from a reader telling me that the blog helped them achieve their own travel goals.
-
-*Thank You for reading!*
+🌟 Retour en images sur la fin de notre mission, à Mbour ! 🌟
+La semaine dernière, pour la fin de notre mission, nous avons eu le plaisir de visiter la Maison Jaune de Mbour, qui a récemment ouvert ses portes.🏠✨
+Le centre accueille une dizaine d’enfants en situation de handicap et propose des activités et enseignements adaptés aux compétences de chacun.  Grâce à notre grille d’évaluation psychomotrice, nous avons pu évaluer le niveau d’acquisition concernant les compétences psychomotrices de bases afin de déterminer leurs besoins et mieux les accompagner.
+En raison du manque de professionnels paramédicaux en dehors de Dakar, certains parents, dont les enfants ne sont pas inscrits au centre, ont fait le déplacement pour leur permettre de bénéficier d’un avis psychomoteur.
+Nous avons également pu échanger avec les professionnels.
+C’est avec beaucoup d’enthousiasme que nous imaginons la suite de cette belle collaboration. Nous avons hâte de continuer à soutenir cette initiative et de mobiliser nos bénévoles pour accompagner ces enfants en psychomotricité.
+Merci à eux pour leur accueil chaleureux 🙏
+#Solidarité #MissionHumanitaire #Psychomotricité #MaisonJaune #Mbour #Enfants #Bénévolat #solidariteinternationale #psychomot #psychomotricitefine #psychomotricité #bilanpsychomoteur #handicap #autisme #senegal #enfantsoleil #mbour
