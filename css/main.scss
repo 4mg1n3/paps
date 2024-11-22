@@ -281,6 +281,7 @@ ul.search-results {
     .inner {
         padding-bottom: 72px;
         padding-top: 60px;
+        display: inline-grid;
     }
 }
 
@@ -288,8 +289,43 @@ ul.search-results {
     padding-top: 48px;
 }
 
+
 .site-logo {
-    margin-bottom: 0;
+
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-grid;
+    justify-content: center;
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+
+    // background
+    background: linear-gradient(90deg, #00853F, #FDEF42, #E31B23);
+    background-size: 200% 200%;
+    //opacity: 0.2;
+    animation: gradient-shift 10s ease infinite;
+}
+
+// Keyframes for bg animation
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .site-title {
