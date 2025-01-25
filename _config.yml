@@ -18,7 +18,7 @@ description: |
   
 
 # Url de base -> host par Github pages
-baseurl: https://4mg1n3.github.io/paps
+baseurl: #https://4mg1n3.github.io/paps
 
 
 sass:
@@ -26,14 +26,18 @@ sass:
 
 # Site navigation
 navigation:
-- text: Home
+- text: Accueil
   url: /
-- text: About
-  url: /about/
-- text: Style Guide
-  url: /style-guide/
-- text: Archives
-  url: /tags/
+- text: Qui-Sommes-Nous ? # Notre association + Quest ce que la psychmotricite
+  url: /qui-sommes-nous/
+- text: Nos projets
+  url: /nos-projets/
+- text: Nos actus
+  url: /nos-actus/
+- text: Nous soutenir
+  url: /nous-soutenir/
+- text: Contact
+  url: /contact/
 
 # Info perso (inutilisée)
 author_name:
