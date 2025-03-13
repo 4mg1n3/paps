@@ -10,7 +10,7 @@ title: PAP'S
 tagline: Partage Autour de la Psychomotricité au Sénégal
 
 # Site logo
-logo: logo.png
+logo:
 
 # A description of your site for social meta tag, search engines, and feed.xml
 description: |
@@ -18,7 +18,7 @@ description: |
   
 
 # Url de base -> host par Github pages
-baseurl: #https://4mg1n3.github.io/paps
+#baseurl: #https://4mg1n3.github.io/paps
 
 
 sass:
@@ -28,7 +28,7 @@ sass:
 navigation:
 - text: Accueil
   url: /
-- text: Qui-Sommes-Nous ? # Notre association + Quest ce que la psychmotricite
+- text: Qui Sommes-Nous ? # Notre association + Quest ce que la psychmotricite
   url: /qui-sommes-nous/
 - text: Nos projets
   url: /nos-projets/
