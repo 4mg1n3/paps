@@ -1,5 +1,5 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# main sass file
 ---
 /**
  * BlogBox 1.0.0
@@ -51,11 +51,11 @@
  */
 
 .site-nav {
-    background-color: #262b2f;
+    background-color: #e6d8c7;
 }
 
 .fixed-nav .site-nav {
-    border-bottom: 1px solid #30373d;
+    border-bottom: 1px solid #c4c4c4;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: fixed;
@@ -86,8 +86,8 @@
         position: relative;
     }
      a {
-        border-left: 2px solid #30373d;
-        color: #aeb0b1;
+        border-left: 2px solid #cacaca;
+        color: #373737;
         display: block;
         padding: 0 15px;
         text-decoration: none;
@@ -118,9 +118,9 @@
 
 .site-header {
     background-image: url('../images/banner.jpg');
-    background-size: cover;
-    background-position: fixed;
-    background-position-x: center;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: top left;
     padding-bottom: 40vw;
     text-align: center;
     .inner {
@@ -153,7 +153,7 @@
     }
 
     // background
-    background: radial-gradient(beige, beige);
+    //background: radial-gradient(rgb(129, 129, 129), beige);
     //background-size: 200% 200%;
     //opacity: 0.2;
     //animation: gradient-shift 10s ease infinite;
@@ -177,8 +177,8 @@
     letter-spacing: -1px;
     margin: 0;
     a {
-        background-color: $accent-color;
-        color: #fff;
+        background-color: #e6d8c7;
+        color: #5c5c5c;
         display: inline-block;
         padding: 15px 30px;
         text-decoration: none;
@@ -193,8 +193,8 @@
     top: 60%;
     left: 20%;
     color: #fff;
-    border: 2px solid black;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    border: 2px solid rgba(56, 56, 56, 0.772);
+    background-color: rgba(65, 65, 65, 0.5); /* Semi-transparent black */
     padding: 0px; /* Add padding for better readability */
     color: #ffffff; /* White text */
     font: bold 4.3vw/1.5 $alt-font;
@@ -471,7 +471,7 @@
  */
 
 .footer-widgets {
-    background-color: #262b2f;
+    background-color: #d3ccad;
     color: #aeb0b1;
     font-size: 16px;
     line-height: 1.5;
@@ -495,7 +495,7 @@
 }
 
 .widget-title {
-    color: #dbdedf;
+    color: #4d4d4d;
     font-size: 18px;
     letter-spacing: normal;
     margin-top: 0;
@@ -568,7 +568,7 @@
 }
 
 .widget-tags a {
-    background-color: #30373d;
+    background-color: #d3ccad;
     border-radius: 2px;
     color: #aeb0b1;
     display: inline-block;
@@ -593,7 +593,7 @@
  */
 
 .site-footer {
-    background-color: #262b2f;
+    background-color: #d3ccad;
     padding-bottom: 30px;
     padding-top: 30px;
     text-align: center;
@@ -694,6 +694,18 @@
     }
     .post-nav+.comments-area {
         margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    .site-description {
+        top: 66%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .site-description {
+        top: 66%;
     }
 }
 

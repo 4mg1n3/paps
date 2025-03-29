@@ -27,19 +27,6 @@
   <script type="text/javascript" src="{{ site.baseurl }}/js/plugins.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/js/custom.js"></script>
 
-  <script>
-    window.simpleJekyllSearch = new SimpleJekyllSearch({
-      searchInput: document.getElementById('search-field'),
-      resultsContainer: document.getElementById('search-results'),
-      json: '{{ site.baseurl }}/search.json',
-      searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a> <span class="entry-meta"><time class="post-date" datetime="{date}">{date}</time></span></li>',
-      noResultsText: 'No results found',
-      limit: 15,
-      fuzzy: false,
-      exclude: ['Welcome']
-    })
-  </script>
-
 </body>
 
 </html>

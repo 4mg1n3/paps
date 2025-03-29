@@ -14,6 +14,7 @@
         </div><!-- .nav-menu -->
     </div><!-- .inner -->
 </nav><!-- .site-nav -->
+{% if page.url == '/' %}
 <header class="site-header fade-in-down delay-0_5s">
     <div class="inner">
         {% if site.logo != null %}
@@ -30,4 +31,5 @@
 	<p class="site-description">Partage Autour de la<br> Psychomotricite au Senegal</p>
     </div><!-- .inner -->
 </header><!-- .site-header -->
+{% endif %}
 
