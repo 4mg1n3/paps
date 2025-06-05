@@ -1,0 +1,217 @@
+.carousel-container {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+    overflow: hidden;
+
+    // New container sizing logic
+    width: 90%;
+    height: auto;
+    max-height: 95vh; // Never exceed viewport height
+
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+        width: 100%;
+        height: 100%; // Take full container height
+    }
+
+    .carousel-item {
+        min-width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0);
+        height: 100%; // Take full carousel height
+
+        .carousel-image {
+            // Adaptive sizing logic
+            max-width: 100%;
+            max-height: 100vh;
+            width: auto;
+            height: auto;
+            object-fit: contain; // Maintain aspect ratio
+
+            // When image is taller than wide
+            &[data-format="portrait"] {
+                height: 100%;
+                width: auto;
+                max-width: 100%;
+            }
+
+            // When image is wider than tall
+            &[data-format="landscape"] {
+                width: 100%;
+                height: auto;
+                max-height: 100vh;
+            }
+
+            // Square images
+            &[data-format="square"] {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                max-height: 100vh;
+            }
+        }
+
+        // Add aspect ratio container option
+        &.aspect-container {
+            aspect-ratio: 16/9; // Default ratio
+            overflow: hidden;
+
+            .carousel-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            // Different aspect ratios
+            &.portrait-ratio {
+                aspect-ratio: 9/16;
+            }
+
+            &.square-ratio {
+                aspect-ratio: 1/1;
+            }
+        }
+
+        .carousel-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+
+            h3 {
+                margin: 0 0 0.5rem 0;
+                font-size: 1.5rem;
+            }
+
+            p {
+                margin: 0;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .carousel-control {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        z-index: 10;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.prev {
+            left: 1rem;
+        }
+
+        &.next {
+            right: 1rem;
+        }
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        z-index: 10;
+
+        .indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(211, 204, 173, 0.6862745098);
+            cursor: pointer;
+
+            &.active {
+                background: $accent-color;
+            }
+        }
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    .carousel-container {
+        .carousel-caption {
+            padding: 0.5rem;
+
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+
+        .carousel-control {
+            font-size: 1.5rem;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-container {
+        .carousel-caption {
+            h3 {
+                font-size: 1rem;
+            }
+
+            p {
+                display: none; // Hide description on very small screens
+            }
+        }
+    }
+}
+
+// Different treatments for different formats
+@media (max-width: 768px) {
+    .carousel-item {
+        .carousel-image {
+            &[data-format="portrait"] {
+                height: 60vh;
+            }
+
+            &[data-format="square"] {
+                width: 90%;
+            }
+        }
+
+        &.aspect-container {
+            // Adjust ratios for mobile
+            aspect-ratio: 1.5/1;
+
+            &.portrait-ratio {
+                aspect-ratio: 10/16;
+            }
+        }
+    }
+}

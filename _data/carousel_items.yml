@@ -1,0 +1,20 @@
+- image: "images/carousel/image_ballons.jpg"
+  alt: "First slide"
+  title: "First Slide Title"
+  description: "Description for the first slide"
+  format: "landscape" # or "portrait" or "square"
+  aspect_ratio: true # optional, uses container with fixed ratio
+
+- image: "images/carousel/image_table.jpg"
+  alt: "Second slide"
+  title: "Second Slide Title"
+  description: "Description for the second slide"
+  format: "square" # or "portrait" or "square"
+  aspect_ratio: true # optional, uses container with fixed ratio
+
+- image: "images/carousel/riding-woods.jpg"
+  alt: "Third slide"
+  title: "Third Slide Title"
+  description: "Description for the third slide"
+  format: "landscape" # or "portrait" or "square"
+  aspect_ratio: true # optional, uses container with fixed ratio
