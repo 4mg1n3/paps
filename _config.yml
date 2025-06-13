@@ -1,0 +1,75 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Titre
+title: PAP'S
+tagline: Partage Autour de la Psychomotricité au Sénégal
+
+# Site logo
+logo:
+
+# A description of your site for social meta tag, search engines, and feed.xml
+description: |
+  Partage autour de la psychomotricité au sénégal, PAP'S, Association Loi 1901
+  
+
+# Url de base -> host par Github pages
+baseurl: #https://4mg1n3.github.io/paps
+
+
+sass:
+  sass_dir: _sass
+
+# Site navigation
+navigation:
+- text: Accueil
+  url: /
+- text: Qui Sommes-Nous ? # Notre association + Quest ce que la psychmotricite
+  url: /qui-sommes-nous/
+- text: Nos projets
+  url: /nos-projets/
+- text: Nos actus
+  url: /nos-actus/
+- text: Nous soutenir
+  url: /nous-soutenir/
+- text: Contact
+  url: /contact/
+
+# Info perso (inutilisée)
+author_name:
+author_bio:
+author_url:
+author_location:
+author_image: 
+
+# Footer (inutilisée)
+banner_image: 
+banner_url: 
+
+# Footer url mailchimp pour forms (inutilisée)
+mailchimp_url:
+
+# Liens réseaux sociaux
+# twitter_username: "username"
+facebook_username: "assopaps"
+github_username: "assopaps"
+#codepen_username: "username"
+#dribbble_username: "username"
+#medium_username: "@username"
+instagram_username: "assopaps"
+#pinterest_username: "username"
+linkedin_username: "assopaps"
+
+# http://jekyllrb.com/docs/pagination/
+paginate: 5
+paginate_path: '/blog/page:num/'
+plugins: [jekyll-paginate]
+
+permalink: pretty
+markdown: kramdown
+kramdown:
+    auto_ids: false
