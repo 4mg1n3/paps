@@ -30,24 +30,7 @@
         {% endfor %}
     </div><!-- .nav-menu -->
 </nav><!-- .site-nav -->
-{% if page.url == '/' %}
-<header class="site-header fade-in-down delay-0_5s">
-    <div class="inner">
-        {% if site.logo != null %}
-        <p class="site-logo">
-            <a href="{{ site.baseurl }}/" rel="home" class="logo-container">
-                <img src="{{ site.baseurl }}/images/{{ site.logo }}" width="200" alt="{{ site.title }} logo" />
-            </a>
-        </p>
-        <h1 class="site-title screen-reader-text">
-            <a href="{{ site.baseurl }}/" rel="home">{{site.title}}</a>
-        </h1>
-        {% else %}
-        {% endif %}
-        <p class="site-description">Partage Autour de la<br> Psychomotricite au Senegal</p>
-    </div><!-- .inner -->
-</header><!-- .site-header -->
-{% endif %}
+
 
 <!--
     <div class="inner">

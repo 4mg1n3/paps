@@ -2,32 +2,38 @@
 layout: default
 ---
 
-<main class="content fade-in-down delay-0_75s">
-    <div class="carousel-container">
-        <div class="carousel">
-            {% for item in site.data.carousel_items %}
-            <div class="carousel-item {% if item.aspect_ratio %}aspect-container {{ item.aspect_ratio }}-ratio{% endif %}">
-                <img src="{{ item.image }}" alt="{{ item.alt }}" class="carousel-image" data-format="{{ item.format }}"
-                    loading="lazy">
-                <!-- rest of the item content -->
+<div class="carousel-container">
+    <div class="carousel">
+        {% for item in site.data.carousel_items %}
+        <div class="carousel-item {% if item.aspect_ratio %}aspect-container {{ item.aspect_ratio }}-ratio{% endif %}">
+            <img src="{{ item.image }}" alt="{{ item.alt }}" class="carousel-image" data-format="{{ item.format }}"
+                loading="lazy">
+            <div class="carousel-caption">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
             </div>
-            {% endfor %}
         </div>
-        <button class="carousel-control prev" aria-label="Previous slide">&#10094;</button>
-        <button class="carousel-control next" aria-label="Next slide">&#10095;</button>
-        <div class="carousel-indicators"></div>
+        {% endfor %}
     </div>
+    <button class="carousel-control prev" aria-label="Previous slide">&#10094;</button>
+    <button class="carousel-control next" aria-label="Next slide">&#10095;</button>
+    <div class="carousel-indicators"></div>
+</div>
+<main class="content fade-in-down delay-0_75s">
+
     <div class="inner">
         {% include loop.html %}
         {% if paginator.total_pages > 1 %}
         <nav class="pagination">
             <h2 class="screen-reader-text">Posts navigation</h2>
             {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="newer-posts"><i class="fa fa-angle-left" aria-hidden="true"></i> Newer Posts</a>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="newer-posts"><i
+                    class="fa fa-angle-left" aria-hidden="true"></i> Newer Posts</a>
             {% endif %}
             <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
             {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="older-posts">Older Posts <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="older-posts">Older Posts <i
+                    class="fa fa-angle-right" aria-hidden="true"></i></a>
             {% endif %}
         </nav><!-- .pagination -->
         {% endif %}

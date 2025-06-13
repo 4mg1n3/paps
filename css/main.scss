@@ -57,7 +57,7 @@
     justify-content: flex-end;
     align-items: center;
     background-color: #d3ccad;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .links-container {
@@ -204,7 +204,7 @@
  */
 
 .post {
-    background: #fff;
+    background: #e4bfa6;
     margin-bottom: 60px;
 }
 
@@ -221,7 +221,7 @@
     font-size: 38px;
     margin: 0 0 12px;
     a {
-        color: #30373d;
+        color: #1a1e22;
         text-decoration: none;
         &:hover {
             color: $accent-color;
@@ -231,7 +231,7 @@
 
 .entry-meta,
 .entry-footer {
-    color: #aeb0b1;
+    color: #262727;
     font: 14px/1.5 $alt-font;
 }
 
@@ -285,7 +285,7 @@
 .more-link {
     background-color: #aeb0b1;
     border-radius: 2px;
-    color: #fff;
+    color: #0f0e0e;
     display: inline-block;
     font: bold 14px/1.5 $alt-font;
     padding: 8px 30px;
@@ -296,65 +296,6 @@
     }
 }
 
-/* Author box */
-
-.author-box {
-    background-color: #f2f2f2;
-    padding: 30px;
-}
-
-.author-info {
-    margin-bottom: 12px;
-}
-
-.author-info .author-image {
-    float: left;
-}
-
-.author-info .author-avatar {
-    background-size: cover;
-    border-radius: 2px;
-    display: block;
-    height: 90px;
-    width: 90px;
-}
-
-.author-image+.author-details {
-    padding-left: 120px;
-}
-
-.author-title {
-    font-size: 18px;
-    margin: 0 0 6px;
-}
-
-.author-bio {
-    font-size: 16px;
-    font-style: italic;
-    line-height: 1.5;
-    margin-bottom: 0;
-}
-
-.author-links {
-    font: 14px/1.66667 $alt-font;
-    margin-bottom: 0;
-    margin-top: 12px;
-}
-
-.author-links>span {
-    display: inline-block;
-    margin-right: 5px;
-    white-space: nowrap;
-}
-
-.author-links a {
-    color: $accent-color;
-    display: inline-block;
-    &:hover {
-        color: #aeb0b1;
-        text-decoration: none;
-    }
-}
 
 /* Archives */
 
@@ -394,21 +335,7 @@
     font: 14px/1.5 $alt-font;
 }
 
-/* Comments */
 
-.comments-area {
-    background-color: #fff;
-    margin-bottom: 60px;
-    padding: 0 30px 45px;
-}
-
-.comments-title {
-    background-color: #f2f2f2;
-    font-size: 30px;
-    margin: 0 -30px 30px;
-    padding: 24px 30px;
-    text-align: center;
-}
 
 /* Post/Paging Navigation */
 
