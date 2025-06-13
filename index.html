@@ -6,13 +6,14 @@ layout: default
     <div class="carousel">
         {% for item in site.data.carousel_items %}
         <div class="carousel-item {% if item.aspect_ratio %}aspect-container {{ item.aspect_ratio }}-ratio{% endif %}">
-            <img src="{{ item.image }}" alt="{{ item.alt }}" class="carousel-image" data-format="{{ item.format }}"
-                loading="lazy">
+            <img src="{{ item.image | prepend: site.baseurl }}" alt="{{ item.alt }}" class="carousel-image"
+                data-format="{{ item.format }}" loading="lazy">
             <div class="carousel-caption">
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.description }}</p>
             </div>
         </div>
+
         {% endfor %}
     </div>
     <button class="carousel-control prev" aria-label="Previous slide">&#10094;</button>

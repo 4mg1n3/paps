@@ -18,7 +18,7 @@ description: |
   
 
 # Url de base -> host par Github pages
-baseurl: https://4mg1n3.github.io/paps
+baseurl: #https://4mg1n3.github.io/paps
 
 
 sass:
