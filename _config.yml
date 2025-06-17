@@ -20,6 +20,7 @@ description: |
 # Url de base -> host par Github pages
 baseurl: https://4mg1n3.github.io/paps
 
+repourl: "https://4mg1n3.github.io/paps"
 
 sass:
   sass_dir: _sass
