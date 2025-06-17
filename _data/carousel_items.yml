@@ -1,25 +1,29 @@
-- image: "images/carousel/image_ballons.jpg"
+# Pour rajouter des images, faire attention a bien mettre le '/' devant le chemin de fichier
+
+
+
+- image: "/images/carousel/image_ballons.jpg"
   alt: "Première image"
   title: "Titre première image"
   description: "Description 1"
   format: "landscape" # or "portrait" or "square"
   aspect_ratio: true # optional, uses container with fixed ratio
 
-- image: "images/carousel/image_table.jpg"
+- image: "/images/carousel/image_table.jpg"
   alt: "Seconde image"
   title: "Titre seconde image"
   description: "Description 2"
   format: "landscape" # or "portrait" or "square"
   aspect_ratio: true # optional, uses container with fixed ratio
 
-- image: "images/carousel/fauteuil.jpg"
+- image: "/images/carousel/fauteuil.jpg"
   alt: "Troisième image"
   title: "Titre troisième image"
   description: "Description 3"
   format: "portrait" # or "portrait" or "square"
   aspect_ratio: true # optional, uses container with fixed ratio
 
-- image: "images/carousel/talibou.jpg"
+- image: "/images/carousel/talibou.jpg"
   alt: "Quatrième image"
   title: "Titre quatrième image"
   description: "Description 4"
