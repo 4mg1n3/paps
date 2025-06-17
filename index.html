@@ -6,7 +6,7 @@ layout: default
     <div class="carousel">
         {% for item in site.data.carousel_items %}
         <div class="carousel-item {% if item.aspect_ratio %}aspect-container {{ item.aspect_ratio }}-ratio{% endif %}">
-            <img src="{{ site.repourl }}{{ item.image }}" alt="{{ item.alt }}" class="carousel-image"
+            <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.alt }}" class="carousel-image"
                 data-format="{{ item.format }}" loading="lazy">
             <div class="carousel-caption">
                 <h3>{{ item.title }}</h3>
