@@ -7,37 +7,56 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let currentIndex = 0;
   const itemCount = items.length;
-  
-  // Add this to your carousel.js
-  function positionCaptions() {
-    document.querySelectorAll('.carousel-item').forEach(item => {
-      const caption = item.querySelector('.carousel-caption');
-      const img = item.querySelector('.carousel-image');
 
-      if (img.naturalHeight > item.clientHeight) {
-        // Image is overflowing vertically
-        caption.style.bottom = `${item.clientHeight - img.clientHeight}px`;
-      } else {
-        // Image fits completely
-        caption.style.bottom = '0';
-      }
+  // Initialize indicators
+  function createIndicators() {
+    indicatorsContainer.innerHTML = ''; // Clear existing indicators
+    items.forEach((_, index) => {
+      const indicator = document.createElement('div');
+      indicator.classList.add('indicator');
+      if (index === 0) indicator.classList.add('active');
+      indicator.addEventListener('click', () => goToSlide(index));
+      indicatorsContainer.appendChild(indicator);
     });
   }
 
-  // Run on load and resize
-  window.addEventListener('load', positionCaptions);
-  window.addEventListener('resize', positionCaptions);
+  // Position captions based on image overflow
+  function positionCaptions() {
+    items.forEach(item => {
+      const caption = item.querySelector('.carousel-caption');
+      const img = item.querySelector('.carousel-image');
 
-  // Create indicators
-  items.forEach((_, index) => {
-    const indicator = document.createElement('div');
-    indicator.classList.add('indicator');
-    if (index === 0) indicator.classList.add('active');
-    indicator.addEventListener('click', () => goToSlide(index));
-    indicatorsContainer.appendChild(indicator);
-  });
+      if (!img || !caption) return;
 
-  // Update carousel position
+      // Wait for image to load if not already loaded
+      if (!img.complete) {
+        img.addEventListener('load', function onLoad() {
+          img.removeEventListener('load', onLoad);
+          calculateCaptionPosition(item, img, caption);
+        });
+        return;
+      }
+
+      calculateCaptionPosition(item, img, caption);
+    });
+  }
+
+  function calculateCaptionPosition(item, img, caption) {
+    const containerHeight = item.clientHeight;
+    const imgHeight = img.clientHeight;
+    const overflow = imgHeight - containerHeight;
+
+    // Reset any previous positioning
+    caption.style.bottom = '';
+
+    if (overflow > 0) {
+      // Image is overflowing - adjust caption position
+      caption.style.bottom = `${overflow}px`;
+    }
+    // Else: default positioning (bottom: 0) is fine
+  }
+
+  // Update carousel position and active indicator
   function updateCarousel() {
     carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 
@@ -45,34 +64,41 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.indicator').forEach((indicator, index) => {
       indicator.classList.toggle('active', index === currentIndex);
     });
+
+    // Recalculate caption positions after slide change
+    positionCaptions();
   }
 
-  // Go to specific slide
+  // Navigation functions
   function goToSlide(index) {
     currentIndex = index;
     updateCarousel();
   }
 
-  // Next slide
   function nextSlide() {
     currentIndex = (currentIndex + 1) % itemCount;
     updateCarousel();
   }
 
-  // Previous slide
   function prevSlide() {
     currentIndex = (currentIndex - 1 + itemCount) % itemCount;
     updateCarousel();
   }
 
+  // Initialize
+  createIndicators();
+  positionCaptions();
+
   // Event listeners
   nextBtn.addEventListener('click', nextSlide);
   prevBtn.addEventListener('click', prevSlide);
 
-  // Optional: Auto-advance
+  // Handle window resize
+  window.addEventListener('resize', positionCaptions);
+
+  // Auto-advance with pause on hover
   let autoSlideInterval = setInterval(nextSlide, 5000);
 
-  // Pause on hover
   carousel.parentElement.addEventListener('mouseenter', () => {
     clearInterval(autoSlideInterval);
   });
@@ -87,11 +113,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   carousel.addEventListener('touchstart', (e) => {
     touchStartX = e.changedTouches[0].screenX;
+    clearInterval(autoSlideInterval); // Pause auto-advance during interaction
   });
 
   carousel.addEventListener('touchend', (e) => {
     touchEndX = e.changedTouches[0].screenX;
     handleSwipe();
+    autoSlideInterval = setInterval(nextSlide, 5000); // Resume auto-advance
   });
 
   function handleSwipe() {

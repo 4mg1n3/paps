@@ -10,6 +10,7 @@
     width: 100%;
     height: auto;
     max-height: 88vh; // Never exceed viewport height
+    min-height: 30vh;
 
     .carousel {
         display: flex;
@@ -79,9 +80,9 @@
         }
 
         .carousel-caption {
+            //visibility: hidden;
             position: absolute;
             left: 0;
-            right: 0;
             background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
             color: white;
             padding: 20px 15px 10px;
@@ -111,7 +112,7 @@
         font-size: 2rem;
         cursor: pointer;
         padding: 0.5rem 1rem;
-        z-index: 10;
+        z-index: 8;
         border-radius: 50%;
         width: 40px;
         height: 40px;
@@ -140,7 +141,7 @@
         display: flex;
         justify-content: center;
         gap: 0.5rem;
-        z-index: 10;
+        z-index: 8;
 
         .indicator {
             width: 10px;
