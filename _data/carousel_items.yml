@@ -17,7 +17,7 @@
   alt: "Troisième image"
   title: "Titre troisième image"
   description: "Description 3"
-  format: "portrait" # or "portrait" or "square"
+  format: "landscape" # or "portrait" or "square"
   aspect_ratio: false # optional, uses container with fixed ratio
 
 - image: "/images/carousel/talibou.jpg"

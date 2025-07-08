@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<main class="about-page fade-in-down delay-0_75s">
+<!-- Part 1 -->
+<div class="about-row">
+  <h2 class="about-title">{{ page.section1_title }}</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>{{ page.section1_content }}</p>
+    </div>
+    <div class="about-image">
+      <img src="{{ '/images/about/' | append: page.section1_image | prepend: site.baseurl }}" alt="{{ page.section1_image_alt }}">
+    </div>
+  </div>
+</div>
+
+<!-- Part 2 -->
+<div class="about-row about-row-reverse">
+  <h2 class="about-title">{{ page.section2_title }}</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>{{ page.section2_content }}</p>
+    </div>
+    <div class="about-image">
+      <img src="{{ '/images/about/' | append: page.section2_image | prepend: site.baseurl }}" alt="{{ page.section2_image_alt }}">
+    </div>
+  </div>
+</div>
+
+</main>

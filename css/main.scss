@@ -335,6 +335,107 @@
     font: 14px/1.5 $alt-font;
 }
 
+/* About page */
+/* About page layout */
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-row {
+  margin-bottom: 4rem;
+}
+
+.about-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  position: relative;
+}
+
+.about-title:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #858585;
+  margin: 0.5rem auto;
+}
+
+.about-content {
+  display: flex;
+  align-items: stretch; /* This ensures children stretch to same height */
+  gap: 2rem;
+}
+
+.about-row .about-content {
+  flex-direction: row;
+}
+
+.about-row-reverse .about-content {
+  flex-direction: row-reverse;
+}
+
+.about-text {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+}
+
+.about-text p {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.6;
+  text-align: justify; /* Justified text */
+  text-justify: inter-word; /* Better justification */
+  align-self: center; /* Vertically center the text block */
+  width: 100%; /* Ensure full width for proper justification */
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%; /* Ensure it stretches to content height */
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%; /* Make image fill container height */
+  object-fit: cover; /* Maintain aspect ratio while filling space */
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Container to enforce equal height */
+.about-image-container {
+  height: 100%;
+  display: flex;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1155px) {
+  .about-content {
+    flex-direction: column !important;
+  }
+  
+  .about-text {
+    padding: 1rem;
+  }
+  
+  .about-image {
+    height: 300px; /* Fixed height on mobile */
+    margin-top: 1rem;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 
 
 /* Post/Paging Navigation */
