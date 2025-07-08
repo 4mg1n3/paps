@@ -32,8 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
       indicator.classList.toggle('active', index === currentIndex);
     });
 
-    // Recalculate caption positions after slide change
-    positionCaptions();
   }
 
   // Navigation functions
@@ -54,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Initialize
   createIndicators();
-  positionCaptions();
 
   // Event listeners
   nextBtn.addEventListener('click', nextSlide);
