@@ -1,12 +1,8 @@
 /**
- * Main JS file for BlogBox behaviours
+ * Main js file
  */
 (function ($) {
     "use strict";
-
-    var $searchField = $('#search-field'),
-        $searchResults = $('#search-results'),
-        $searchCount = $('.search-count');
 
     $(document).ready(function(){
         var $body = $(document.body),
@@ -22,23 +18,6 @@
             $('html, body').animate({'scrollTop': 0});
         });
 
-        // Site search navigation
-        $('.search-toggle').on('click', function(e){
-            if ( $body.hasClass('search--opened') ) {
-                $body.removeClass('search--opened');
-                setTimeout(function() {
-					$searchField.val('');
-					$searchResults.html('');
-					$searchCount.text('0');
-				}, 300);
-            } else {
-                $body.addClass('search--opened');
-                setTimeout(function() {
-                    $('#search-field').focus();
-                }, 300);
-            }
-            e.preventDefault();
-        });
 
         // Enable menu toggle
         $menuToggle.click(function(){

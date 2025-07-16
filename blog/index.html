@@ -1,0 +1,72 @@
+---
+layout: default
+title: Nos projets
+permalink: /nos-projets/
+---
+<main class="content fade-in-down delay-0_75s">
+  <div class="inner">
+    <header class="page-header">
+      <h1 class="page-title">Nos projets</h1>
+      <p class="page-description">Découvrez tous nos projets et initiatives autour de la psychomotricité au Sénégal.</p>
+    </header>
+    
+    <div class="projects-grid">
+      {% for post in site.posts %}
+      <article class="project-card">
+        {% if post.featured_image %}
+        <div class="project-card-image">
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <img src="{{ "/images/posts/" | append: post.featured_image | prepend: site.baseurl }}" 
+                 alt="{% if post.featured_image_alt %}{{ post.featured_image_alt }}{% else %}{{ post.title }}{% endif %}">
+          </a>
+        </div>
+        {% endif %}
+        
+        <div class="project-card-content">
+          <header class="project-card-header">
+            <h2 class="project-card-title">
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </h2>
+            <div class="project-card-meta">
+              <time class="post-date" datetime="{{ post.date | date: '%Y-%m-%d' }}">
+                {% assign m = post.date | date: "%-m" %}
+                {{ post.date | date: "%-d" }}
+                {% case m %}
+                {% when '1' %}janvier
+                {% when '2' %}février
+                {% when '3' %}mars
+                {% when '4' %}avril
+                {% when '5' %}mai
+                {% when '6' %}juin
+                {% when '7' %}juillet
+                {% when '8' %}août
+                {% when '9' %}septembre
+                {% when '10' %}octobre
+                {% when '11' %}novembre
+                {% when '12' %}décembre
+                {% endcase %}
+                {{ post.date | date: "%Y" }}
+              </time>
+              {% if post.author %}
+              <span class="author">par {{ post.author }}</span>
+              {% endif %}
+            </div>
+          </header>
+          
+          <div class="project-card-excerpt">
+            {% if post.content contains '<!--more-->' %}
+              {{ post.content | split:'<!--more-->' | first | strip_html | truncatewords: 30 }}
+            {% else %}
+              {{ post.content | strip_html | truncatewords: 30 }}
+            {% endif %}
+          </div>
+          
+          <footer class="project-card-footer">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more-btn">Lire la suite</a>
+          </footer>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</main>
