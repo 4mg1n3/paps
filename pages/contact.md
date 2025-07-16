@@ -50,14 +50,7 @@ permalink: /contact/
                     <label for="message">Message *</label>
                     <textarea id="message" name="message" rows="6" required placeholder="Décrivez votre demande ou votre message..."></textarea>
                 </div>
-                
-                <div class="form-group checkbox-group">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="newsletter" value="Oui, je souhaite recevoir la newsletter">
-                        <span class="checkmark"></span>
-                        Je souhaite recevoir la newsletter de PAP'S
-                    </label>
-                </div>
+            
                 
                 <!-- Hidden field to customize the thank you page -->
                 <input type="hidden" name="_next" value="{{ site.baseurl }}/contact/?success=true">
