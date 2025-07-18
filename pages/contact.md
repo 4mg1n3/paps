@@ -37,7 +37,7 @@ permalink: /contact/
 <div class="contact-page">
     <header class="contact-header">
         <h1>Contactez-nous</h1>
-        <p>Nous serions ravis d'avoir de vos nouvelles. N'hésitez pas à nous contacter pour toute question concernant nos projets ou la psychomotricité au Sénégal.</p>
+        <p>N'hésitez pas à nous contacter pour toute question concernant nos projets ou la psychomotricité au Sénégal.</p>
     </header>
 
     <div class="contact-content">
@@ -71,7 +71,6 @@ permalink: /contact/
                         <option value="Demande d'information - PAPS">Demande d'information</option>
                         <option value="Proposition de collaboration - PAPS">Proposition de collaboration</option>
                         <option value="Soutenir l'association - PAPS">Soutenir l'association</option>
-                        <option value="Formation en psychomotricité - PAPS">Formation en psychomotricité</option>
                         <option value="Autre demande - PAPS">Autre</option>
                     </select>
                 </div>
@@ -106,21 +105,11 @@ permalink: /contact/
                     </div>
                     <div class="contact-details">
                         <h3>E-mail</h3>
-                        <p><a href="mailto:contact@assopaps.org">contact@assopaps.org</a></p>
+                        <p><a href="mailto:asso.paps@gmail.com">asso.paps@gmail.com</a></p>
                     </div>
                 </div>
                 
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                        </svg>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Téléphone</h3>
-                        <p><a href="tel:+221123456789">+221 12 345 67 89</a></p>
-                    </div>
-                </div>
+            
                 
                 <div class="contact-item">
                     <div class="contact-icon">
@@ -130,8 +119,8 @@ permalink: /contact/
                     </div>
                     <div class="contact-details">
                         <h3>Adresse</h3>
-                        <p>Dakar, Sénégal<br>
-                        <small>Adresse complète à préciser</small></p>
+                        <p>Nantes, France<br>
+                        <small></small></p>
                     </div>
                 </div>
             </div>
