@@ -8,6 +8,21 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentIndex = 0;
   const itemCount = items.length;
 
+  // Debug logging
+  console.log('Carousel initialized:', {
+    carousel: !!carousel,
+    itemCount: itemCount,
+    prevBtn: !!prevBtn,
+    nextBtn: !!nextBtn,
+    indicators: !!indicatorsContainer
+  });
+
+  // Exit early if essential elements are missing
+  if (!carousel || itemCount === 0) {
+    console.error('Carousel elements not found or no items');
+    return;
+  }
+
   // Initialize indicators
   function createIndicators() {
     indicatorsContainer.innerHTML = ''; // Clear existing indicators
@@ -57,19 +72,33 @@ document.addEventListener('DOMContentLoaded', function () {
   nextBtn.addEventListener('click', nextSlide);
   prevBtn.addEventListener('click', prevSlide);
 
-  // Handle window resize
-  window.addEventListener('resize', positionCaptions);
+  // Handle window resize (removed positionCaptions since we removed captions)
 
   // Auto-advance with pause on hover
-  let autoSlideInterval = setInterval(nextSlide, 5000);
+  let autoSlideInterval;
 
-  carousel.parentElement.addEventListener('mouseenter', () => {
+  function startAutoSlide() {
+    console.log('Starting auto-slide with 4 second interval');
+    autoSlideInterval = setInterval(() => {
+      console.log('Auto-advancing to next slide');
+      nextSlide();
+    }, 4000);
+  }
+
+  function stopAutoSlide() {
+    console.log('Stopping auto-slide');
     clearInterval(autoSlideInterval);
-  });
+  }
 
-  carousel.parentElement.addEventListener('mouseleave', () => {
-    autoSlideInterval = setInterval(nextSlide, 5000);
-  });
+  // Start auto-advance
+  startAutoSlide();
+
+  // Pause on hover
+  const carouselContainer = carousel.parentElement;
+  if (carouselContainer) {
+    carouselContainer.addEventListener('mouseenter', stopAutoSlide);
+    carouselContainer.addEventListener('mouseleave', startAutoSlide);
+  }
 
   // Touch support for mobile
   let touchStartX = 0;
@@ -83,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
   carousel.addEventListener('touchend', (e) => {
     touchEndX = e.changedTouches[0].screenX;
     handleSwipe();
-    autoSlideInterval = setInterval(nextSlide, 5000); // Resume auto-advance
+    autoSlideInterval = setInterval(nextSlide, 4000); // Resume auto-advance
   });
 
   function handleSwipe() {

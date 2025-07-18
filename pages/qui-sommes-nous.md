@@ -1,7 +1,7 @@
 ---
 layout: about
 title: A propos de nous
-description: Nous sommes l'association PAP'S, association Loi 1901
+description: Nous sommes l'association PAPS, association Loi 1901
 permalink: /qui-sommes-nous/
 featured_image: aboutPage.jpg
 section1_title: Notre histoire

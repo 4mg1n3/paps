@@ -6,100 +6,59 @@
     margin-bottom: 5vh;
     overflow: hidden;
 
-    // New container sizing logic
+    // Fixed aspect ratio container
     width: 100%;
-    height: auto;
-    max-height: 88vh; // Never exceed viewport height
-    min-height: 30vh;
+    aspect-ratio: 16/9; // Fixed 16:9 aspect ratio
+    max-width: 1200px; // Maximum width for large screens
 
     .carousel {
         display: flex;
         transition: transform 0.5s ease;
         width: 100%;
-        height: 100%; // Take full container height
+        height: 100%;
     }
 
     .carousel-item {
         min-width: 100%;
         position: relative;
-        display: block;
+        display: flex;
         justify-content: center;
         align-items: center;
-        background: rgba(0, 0, 0, 0);
-        height: 100%; // Take full carousel height
+        background: rgba(0, 0, 0, 0.05);
+        height: 100%;
+        overflow: hidden;
 
         .carousel-image {
-            // Adaptive sizing logic
+            object-fit: contain;
             max-width: 100%;
-            //max-height: 100vh;
-
-            object-fit: contain; // Maintain aspect ratio
-
-            // When image is taller than wide
+            max-height: 100%;
+            
+            // Spacing based on image format and dimensions
             &[data-format="portrait"] {
-                height: auto;
-                width: 100%;
-                max-width: 100%;
+                height: 100%;
+                width: auto;
+                // Add horizontal spacing for portrait images
+                margin: 0 auto;
             }
 
-            // When image is wider than tall
             &[data-format="landscape"] {
-                height: auto;
                 width: 100%;
-                //max-height: 00vh;
+                height: auto;
+                // Add vertical spacing for landscape images
+                margin: auto 0;
             }
 
-            // Square images
             &[data-format="square"] {
+                // Square images get balanced spacing
+                max-width: 100%;
+                max-height: 100%;
                 width: auto;
                 height: auto;
-                max-width: 100%;
-                max-height: 100vh;
+                margin: auto;
             }
         }
 
-        // Add aspect ratio container option
-        &.aspect-container {
-            aspect-ratio: 16/9; // Default ratio
-            overflow: hidden;
 
-            .carousel-image {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            // Different aspect ratios
-            &.portrait-ratio {
-                aspect-ratio: 9/16;
-            }
-
-            &.square-ratio {
-                aspect-ratio: 1/1;
-            }
-        }
-
-        .carousel-caption {
-            visibility: hidden;
-            position: absolute;
-            left: 0;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
-            color: white;
-            padding: 20px 15px 10px;
-            z-index: 2;
-
-            /* Text styling */
-            h3 {
-                margin: 0 0 5px 0;
-                font-size: 1.2rem;
-            }
-
-            p {
-                margin: 0;
-                font-size: 0.9rem;
-                opacity: 0.9;
-            }
-        }
     }
 
     .carousel-control {
@@ -160,17 +119,8 @@
 // Responsive adjustments
 @media (max-width: 768px) {
     .carousel-container {
-        .carousel-caption {
-            padding: 0.5rem;
-
-            h3 {
-                font-size: 1.2rem;
-            }
-
-            p {
-                font-size: 0.8rem;
-            }
-        }
+        // Adjust aspect ratio for mobile - slightly more square
+        aspect-ratio: 4/3;
 
         .carousel-control {
             font-size: 1.5rem;
@@ -182,38 +132,7 @@
 
 @media (max-width: 480px) {
     .carousel-container {
-        .carousel-caption {
-            h3 {
-                font-size: 1rem;
-            }
-
-            p {
-                display: none; // Hide description on very small screens
-            }
-        }
-    }
-}
-
-// Different treatments for different formats
-@media (max-width: 768px) {
-    .carousel-item {
-        .carousel-image {
-            &[data-format="portrait"] {
-                height: 60vh;
-            }
-
-            &[data-format="square"] {
-                width: 90%;
-            }
-        }
-
-        &.aspect-container {
-            // Adjust ratios for mobile
-            aspect-ratio: 1.5/1;
-
-            &.portrait-ratio {
-                aspect-ratio: 10/16;
-            }
-        }
+        // More square aspect ratio for small screens
+        aspect-ratio: 1.2/1;
     }
 }

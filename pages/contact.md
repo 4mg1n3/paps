@@ -68,11 +68,11 @@ permalink: /contact/
                     <label for="subject">Sujet *</label>
                     <select id="subject" name="_subject" required>
                         <option value="">Choisissez un sujet</option>
-                        <option value="Demande d'information - PAP'S">Demande d'information</option>
-                        <option value="Proposition de collaboration - PAP'S">Proposition de collaboration</option>
-                        <option value="Soutenir l'association - PAP'S">Soutenir l'association</option>
-                        <option value="Formation en psychomotricité - PAP'S">Formation en psychomotricité</option>
-                        <option value="Autre demande - PAP'S">Autre</option>
+                        <option value="Demande d'information - PAPS">Demande d'information</option>
+                        <option value="Proposition de collaboration - PAPS">Proposition de collaboration</option>
+                        <option value="Soutenir l'association - PAPS">Soutenir l'association</option>
+                        <option value="Formation en psychomotricité - PAPS">Formation en psychomotricité</option>
+                        <option value="Autre demande - PAPS">Autre</option>
                     </select>
                 </div>
                 

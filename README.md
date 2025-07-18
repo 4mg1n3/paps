@@ -1,2 +1,2 @@
-# Site web de l'association PAP'S
+# Site web de l'association PAPS
 
