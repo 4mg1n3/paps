@@ -78,7 +78,7 @@ permalink: /nous-soutenir/
         Rejoignez notre équipe de bénévoles et participez directement à nos missions au Sénégal. Que vous soyez psychomotricien diplômé ou que vous souhaitiez nous aider dans d'autres domaines, votre engagement est précieux.
       </p>
       <div class="support-links">
-        <a href="/contact/" class="support-link">
+        <a href="{{site.baseurl}}/contact/" class="support-link">
           <div class="support-link-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.5 1.5 0 0 0 18.54 8H16c-.8 0-1.54.37-2.01.99L12 11l-1.99-2.01A2.5 2.5 0 0 0 8 8H5.46c-.8 0-1.49.59-1.42 1.37L6.5 16H9v6h2v-6h2v6h2z"/>
@@ -105,7 +105,7 @@ permalink: /nous-soutenir/
         Vous représentez une entreprise, une institution ou une organisation qui souhaite soutenir notre cause ? Explorez nos opportunités de partenariat pour un impact durable.
       </p>
       <div class="support-links">
-        <a href="/contact/" class="support-link">
+        <a href="{{site.baseurl}}/contact/" class="support-link">
           <div class="support-link-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
