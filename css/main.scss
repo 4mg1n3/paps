@@ -1,13 +1,8 @@
 ---
-# main sass file
 ---
-/**
- * BlogBox 1.0.0
- * By Just Good Themes - https://justgoodthemes.com/
- */
 
 // Import
-@import "variables","icons","reset","general","carousel";
+@import "variables", "icons", "reset", "general", "carousel";
 
 /**
  * Structure
@@ -71,6 +66,7 @@
 .site-nav {
     font: bold 14px/1.5 $alt-font;
     text-transform: uppercase;
+
     a {
         height: 100%;
         padding: 0 20px;
@@ -79,12 +75,15 @@
         text-decoration: none;
         color: #30373d;
     }
-    a:hover {        
+
+    a:hover {
         background-color: #777158;
     }
+
     .home-link {
         margin-right: auto;
     }
+
     svg {
         fill: $text-color;
     }
@@ -94,7 +93,8 @@
     display: none;
 }
 
-.open-sidebar-button, .close-sidebar-button {
+.open-sidebar-button,
+.close-sidebar-button {
     display: none;
 }
 
@@ -118,10 +118,12 @@
     background-position: top left;
     padding-bottom: 40vw;
     text-align: center;
+
     .inner {
         padding-bottom: 72px;
         padding-top: 60px;
     }
+
     margin-bottom: 20px;
 }
 
@@ -157,27 +159,29 @@
 
 // Keyframes for bg animation
 //@keyframes gradient-shift {
-    //0% {
-        //background-position: 0% 50%;
-    //}
-    //50% {
-        //background-position: 100% 50%;
-    //}
-    //100% {
-        //background-position: 0% 50%;
-    //}
+//0% {
+//background-position: 0% 50%;
+//}
+//50% {
+//background-position: 100% 50%;
+//}
+//100% {
+//background-position: 0% 50%;
+//}
 //}
 
 .site-title {
     font: bold 34px/1.2 $heading-font;
     letter-spacing: -1px;
     margin: 0;
+
     a {
         background-color: #e6d8c7;
         color: #5c5c5c;
         display: inline-block;
         padding: 15px 30px;
         text-decoration: none;
+
         &:hover {
             background-color: #606669;
         }
@@ -190,9 +194,12 @@
     left: 20%;
     color: #fff;
     border: 2px solid rgba(56, 56, 56, 0.772);
-    background-color: rgba(65, 65, 65, 0.5); /* Semi-transparent black */
-    padding: 0px; /* Add padding for better readability */
-    color: #ffffff; /* White text */
+    background-color: rgba(65, 65, 65, 0.5);
+    /* Semi-transparent black */
+    padding: 0px;
+    /* Add padding for better readability */
+    color: #ffffff;
+    /* White text */
     font: bold 4.3vw/1.5 $alt-font;
     border-radius: 5px;
     margin: 10px;
@@ -220,9 +227,11 @@
 .entry-title {
     font-size: 38px;
     margin: 0 0 12px;
+
     a {
         color: #1a1e22;
         text-decoration: none;
+
         &:hover {
             color: $accent-color;
         }
@@ -247,6 +256,7 @@
 
 .share-post {
     margin-top: 24px;
+
     a {
         border-radius: 2px;
         color: #fff;
@@ -256,6 +266,7 @@
         margin-left: 5px;
         text-align: center;
         width: 28px;
+
         &:hover {
             background-color: #aeb0b1;
         }
@@ -290,6 +301,7 @@
     font: bold 14px/1.5 $alt-font;
     padding: 8px 30px;
     text-decoration: none;
+
     &:hover {
         background-color: $accent-color;
         color: #fff;
@@ -325,6 +337,7 @@
 .archive-posts-list {
     list-style: none;
     padding-left: 0;
+
     a {
         text-decoration: none;
     }
@@ -337,102 +350,111 @@
 
 /* About page */
 .about-page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .about-row {
-  margin-bottom: 4rem;
+    margin-bottom: 4rem;
 }
 
 .about-title {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    position: relative;
 }
 
 .about-title:after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 3px;
-  background: #858585;
-  margin: 0.5rem auto;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #858585;
+    margin: 0.5rem auto;
 }
 
 .about-content {
-  display: flex;
-  align-items: stretch; /* This ensures children stretch to same height */
-  gap: 2rem;
+    display: flex;
+    align-items: stretch;
+    /* This ensures children stretch to same height */
+    gap: 2rem;
 }
 
 .about-row .about-content {
-  flex-direction: row;
+    flex-direction: row;
 }
 
 .about-row-reverse .about-content {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .about-text {
-  flex: 1;
-  padding: 1.5rem;
-  display: flex;
+    flex: 1;
+    padding: 1.5rem;
+    display: flex;
 }
 
 .about-text p {
-  margin: 0;
-  font-size: 25px;
-  line-height: 1.6;
-  text-align: justify; /* Justified text */
-  text-justify: inter-word; /* Better justification */
-  align-self: center; /* Vertically center the text block */
-  width: 100%; /* Ensure full width for proper justification */
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    /* Justified text */
+    text-justify: inter-word;
+    /* Better justification */
+    align-self: flex-start;
+    /* Align text to the top */
+    width: 100%;
+    /* Ensure full width for proper justification */
 }
 
 .about-image {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100%; /* Ensure it stretches to content height */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    /* Ensure it stretches to content height */
 }
 
 .about-image img {
-  width: 100%;
-  height: 100%; /* Make image fill container height */
-  object-fit: cover; /* Maintain aspect ratio while filling space */
-  border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 80%;
+    /* Reduced from 100% to 80% */
+    object-fit: cover;
+    /* Maintain aspect ratio while filling space */
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Container to enforce equal height */
 .about-image-container {
-  height: 100%;
-  display: flex;
+    height: 100%;
+    display: flex;
 }
 
 /* Responsive adjustments */
 @media (max-width: 1155px) {
-  .about-content {
-    flex-direction: column !important;
-  }
-  
-  .about-text {
-    padding: 1rem;
-  }
-  
-  .about-image {
-    height: 300px; /* Fixed height on mobile */
-    margin-top: 1rem;
-  }
-  
-  .about-image img {
-    width: 100%;
-    height: 100%;
-  }
+    .about-content {
+        flex-direction: column !important;
+    }
+
+    .about-text {
+        padding: 1rem;
+    }
+
+    .about-image {
+        height: 300px;
+        /* Fixed height on mobile */
+        margin-top: 1rem;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
@@ -599,6 +621,7 @@
     margin: 0 2px 6px 0;
     padding: 6px 10px;
     text-decoration: none;
+
     &:hover {
         background-color: $accent-color;
         color: #fff;
@@ -624,6 +647,7 @@
 
 .social-links {
     margin-bottom: 30px;
+
     a {
         color: #606669;
         display: inline-block;
@@ -640,6 +664,7 @@
     color: #606669;
     font-size: 14px;
     line-height: 1.5;
+
     a {
         color: #aeb0b1;
         text-decoration: none;
@@ -662,6 +687,7 @@
     margin-top: 30px;
     text-decoration: none;
     width: 36px;
+
     &:hover {
         background-color: $accent-color;
         color: #fff;
@@ -686,6 +712,7 @@
         background-color: rgb(211, 204, 173);
         transition: 0.6s ease-in;
     }
+
     .site-nav a {
         box-sizing: border-box;
         height: auto;
@@ -693,14 +720,18 @@
         padding: 20px 10px;
         justify-content: flex-start;
     }
-    .open-sidebar-button, .close-sidebar-button {
+
+    .open-sidebar-button,
+    .close-sidebar-button {
         display: block;
     }
-    #sidebar-active:checked ~ .links-container {
+
+    #sidebar-active:checked~.links-container {
         right: 0;
         padding: 20px;
     }
-    #sidebar-active:checked ~ #overlay-side {
+
+    #sidebar-active:checked~#overlay-side {
         height: 100%;
         width: 100%;
         position: fixed;
@@ -731,15 +762,18 @@
     .content {
         padding-bottom: 30px;
     }
+
     .post,
     .comments-area {
         margin-bottom: 15px;
     }
+
     .post-nav,
     .pagination {
         margin-bottom: 0;
         margin-top: 45px;
     }
+
     .post-nav+.comments-area {
         margin-top: 30px;
     }
@@ -758,6 +792,7 @@
 }
 
 @media only screen and (max-width: 800px) {
+
     .one-third,
     .footer-columns .one-third:nth-child(1):nth-last-child(3),
     .footer-columns .one-third:nth-child(2):nth-last-child(2),
@@ -771,6 +806,7 @@
         height: 72px;
         width: 90px;
     }
+
     .widget-recent-posts .post-thumb+.post-title,
     .widget-recent-posts .post-thumb+.post-title+.post-date {
         margin-right: 105px;
@@ -781,42 +817,52 @@
     html {
         font-size: 100%;
     }
+
     h1,
     .entry-title {
         font-size: 34px;
         letter-spacing: -1px;
     }
+
     h2,
     .site-title {
         font-size: 30px;
     }
+
     h3,
     .comments-title {
         font-size: 24px;
         letter-spacing: normal;
     }
+
     h4,
     blockquote {
         font-size: 20px;
     }
+
     h5 {
         font-size: 18px;
     }
+
     h6 {
         font-size: 16px;
     }
+
     #footer-columns .one-third {
         width: 100%;
     }
+
     .site-header .inner {
         padding-bottom: 60px;
         padding-top: 48px;
         display: block;
     }
+
     .page-number {
         display: block;
         padding: 0;
     }
+
     .older-posts,
     .newer-posts {
         display: inline-block;
@@ -826,29 +872,36 @@
 }
 
 @media only screen and (max-width: 480px) {
+
     h1,
     .entry-title {
         font-size: 30px;
     }
+
     h2,
     .site-title {
         font-size: 24px;
         letter-spacing: normal;
     }
+
     h3,
     .comments-title {
         font-size: 20px;
     }
+
     h4 {
         font-size: 18px;
     }
+
     h5 {
         font-size: 16px;
     }
+
     .site-header .inner {
         padding-bottom: 48px;
         padding-top: 36px;
     }
+
     .entry-box,
     .author-box,
     .comments-area,
@@ -856,14 +909,17 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+
     .author-info .author-image {
         float: none;
         margin-bottom: 15px;
     }
+
     .author-image+.author-details {
         padding-left: 0;
     }
 }
+
 /**
  * Projects Page - Card Layout
  * ----------------------------------------
@@ -1006,19 +1062,19 @@
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .project-card-image {
         height: 180px;
     }
-    
+
     .project-card-content {
         padding: 20px;
     }
-    
+
     .project-card-title {
         font-size: 20px;
     }
-    
+
     .page-title {
         font-size: 32px;
     }
@@ -1028,19 +1084,21 @@
     .projects-grid {
         gap: 15px;
     }
-    
+
     .project-card-content {
         padding: 16px;
     }
-    
+
     .project-card-title {
         font-size: 18px;
     }
-    
+
     .page-title {
         font-size: 28px;
     }
-}/**
+}
+
+/**
  
 * Enhanced Homepage Styles
  * ----------------------------------------
@@ -1067,12 +1125,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-        135deg,
-        rgba(0, 0, 0, 0.3) 0%,
-        rgba(0, 0, 0, 0.1) 50%,
-        rgba(0, 0, 0, 0.4) 100%
-    );
+    background: linear-gradient(135deg,
+            rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0.1) 50%,
+            rgba(0, 0, 0, 0.4) 100%);
     z-index: 1;
 }
 
@@ -1352,41 +1408,41 @@
     .main-title {
         font-size: 2.5rem;
     }
-    
+
     .main-subtitle {
         font-size: 1.2rem;
     }
-    
+
     .caption-content h2 {
         font-size: 2rem;
     }
-    
+
     .caption-content p {
         font-size: 1rem;
     }
-    
+
     .nav-item {
         flex-direction: column !important;
         text-align: center !important;
         padding: 24px;
     }
-    
+
     .nav-content {
         text-align: center !important;
     }
-    
+
     .nav-title {
         font-size: 1.5rem;
     }
-    
+
     .nav-description {
         font-size: 1rem;
     }
-    
+
     .posts-preview-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
@@ -1398,35 +1454,36 @@
         min-height: 300px;
         margin-bottom: 40px;
     }
-    
+
     .welcome-section {
         margin-bottom: 40px;
     }
-    
+
     .navigation-links {
         margin-bottom: 40px;
     }
-    
+
     .main-title {
         font-size: 2rem;
     }
-    
+
     .nav-item {
         padding: 20px;
     }
-    
+
     .nav-title {
         font-size: 1.3rem;
     }
-    
+
     .caption-content h2 {
         font-size: 1.5rem;
     }
-    
+
     .carousel-caption.enhanced {
         padding: 20px 15px 15px;
     }
 }
+
 /**
  * Contact Page Styles
  * ----------------------------------------
@@ -1678,23 +1735,23 @@
     .contact-page {
         padding: 1rem;
     }
-    
+
     .contact-header h1 {
         font-size: 2.5rem;
     }
-    
+
     .contact-header p {
         font-size: 1.1rem;
     }
-    
+
     .contact-form {
         padding: 1.5rem;
     }
-    
+
     .contact-item {
         padding: 1rem;
     }
-    
+
     .contact-icon {
         width: 40px;
         height: 40px;
@@ -1705,17 +1762,17 @@
     .contact-header h1 {
         font-size: 2rem;
     }
-    
+
     .contact-form {
         padding: 1rem;
     }
-    
+
     .form-group input,
     .form-group select,
     .form-group textarea {
         padding: 10px 12px;
     }
-    
+
     .submit-btn {
         padding: 14px 24px;
         font-size: 1rem;

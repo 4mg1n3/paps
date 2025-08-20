@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Contact
+title: CONTACTEZ-NOUS
 permalink: /contact/
 ---
 
 <style>
+
 .contact-page { max-width: 800px; margin: 0 auto; padding: 2rem; }
 .contact-header { text-align: center; margin-bottom: 3rem; }
-.contact-header h1 { font-size: 2.5rem; color: #1a1e22; margin: 0 0 1rem; }
 .contact-header p { font-size: 1.1rem; color: #606669; line-height: 1.6; }
 .contact-content { display: flex; flex-direction: column; gap: 3rem; }
 .contact-form-section h2, .contact-info-section h2 { font-size: 1.6rem; color: #1a1e22; margin: 0 0 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid #d3ccad; }
@@ -31,12 +31,11 @@ permalink: /contact/
 .social-links-contact { display: flex; flex-direction: column; gap: 12px; }
 .social-links-contact a { display: flex; align-items: center; gap: 12px; color: #777158; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 6px; transition: all 0.3s ease; }
 .social-links-contact a:hover { background: rgba(119, 113, 88, 0.1); color: #606669; transform: translateX(5px); }
-@media (max-width: 768px) { .contact-page { padding: 1rem; } .contact-form { padding: 1.5rem; } .contact-header h1 { font-size: 2rem; } }
+@media (max-width: 768px) { .contact-page { padding: 1rem; } .contact-form { padding: 1.5rem; } }
 </style>
 
 <div class="contact-page">
     <header class="contact-header">
-        <h1>Contactez-nous</h1>
         <p>N'hésitez pas à nous contacter pour toute question concernant nos projets ou la psychomotricité au Sénégal.</p>
     </header>
 
