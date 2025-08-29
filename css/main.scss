@@ -1,7 +1,5 @@
----
----
+------ // Import
 
-// Import
 @import "variables", "icons", "reset", "general", "carousel";
 
 /**
@@ -87,6 +85,35 @@
     svg {
         fill: $text-color;
     }
+}
+
+/* Logo styles */
+.nav-logo {
+    height: 62px;
+    width: auto;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Sidebar header with close button and logo */
+.sidebar-header {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-logo img {
+    height: 32px;
+    width: auto;
 }
 
 #sidebar-active {
@@ -392,7 +419,7 @@
 
 .about-text {
     flex: 1;
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
 }
 
@@ -413,16 +440,18 @@
 .about-image {
     flex: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     min-height: 100%;
-    /* Ensure it stretches to content height */
+    padding: 1rem;
+    /* Same padding as text */
 }
 
 .about-image img {
-    width: 100%;
-    height: 80%;
-    /* Reduced from 100% to 80% */
+    width: 90%;
+    /* Slightly smaller to accommodate padding */
+    height: 75%;
+    /* Reduced from 80% to 75% */
     object-fit: cover;
     /* Maintain aspect ratio while filling space */
     border-radius: 4px;
@@ -446,14 +475,46 @@
     }
 
     .about-image {
-        height: 300px;
-        /* Fixed height on mobile */
+        height: 180px;
+        /* Much smaller height for mobile */
         margin-top: 1rem;
+        max-width: 280px;
+        /* Limit width on mobile */
+        align-self: center;
+        /* Center the image container */
     }
 
     .about-image img {
         width: 100%;
         height: 100%;
+        border-radius: 8px;
+        /* Slightly more rounded corners for mobile */
+    }
+}
+
+/* Additional mobile optimization for very small screens */
+@media (max-width: 480px) {
+    .about-page {
+        padding: 1rem;
+    }
+
+    .about-row {
+        margin-bottom: 2.5rem;
+    }
+
+    .about-title {
+        font-size: 1.6rem;
+    }
+
+    .about-image {
+        height: 150px;
+        /* Even smaller on very small screens */
+        max-width: 240px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.5;
     }
 }
 
@@ -738,6 +799,37 @@
         top: 0;
         left: 0;
         z-index: 9;
+    }
+
+    /* Show sidebar header in mobile sidebar */
+    .sidebar-header {
+        display: flex;
+        margin: 0;
+        padding: 0px;
+        width: calc(100% - 20px);
+    }
+
+    /* Make logo bigger in mobile sidebar */
+    .sidebar-logo img {
+        height: 70px;
+        width: auto;
+    }
+
+    /* Hide logo in desktop navigation on mobile */
+    .nav-logo {
+        display: none;
+    }
+
+    /* Ensure close button is properly styled in sidebar */
+    .close-sidebar-button {
+        cursor: pointer;
+        padding: 0;
+        background: none;
+        border: none;
+    }
+
+    .close-sidebar-button svg {
+        fill: #30373d;
     }
 }
 

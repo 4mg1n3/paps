@@ -7,12 +7,18 @@
     </label>
     <label id="overlay-side" for="sidebar-active"></label>
     <div class="links-container">
-        <label for="sidebar-active" class="close-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
-                <path
-                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-            </svg>
-        </label>
+        <!-- Top bar with close button and logo -->
+        <div class="sidebar-header">
+            <label for="sidebar-active" class="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </label>
+            <div class="sidebar-logo">
+                <img src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" />
+            </div>
+        </div>
 
         {% for link in site.navigation %}
         {% assign current = nil %}
@@ -21,12 +27,16 @@
         {% endif %}
         {% if link.text == 'Accueil' %}
         {% assign acc_class = 'home-link' %}
+        <a class="{{ current }} {{acc_class}}" href="{{ site.baseurl }}{{ link.url }}">
+            <img src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" class="nav-logo" />
+            {{ link.text }}
+        </a>
         {% else %}
         {% assign acc_class = '' %}
-        {% endif %}
         <a class="{{ current }} {{acc_class}}" href="{{ site.baseurl }}{{ link.url }}">{{
             link.text
             }}</a>
+        {% endif %}
         {% endfor %}
     </div><!-- .nav-menu -->
 </nav><!-- .site-nav -->

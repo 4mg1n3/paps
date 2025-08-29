@@ -10,7 +10,7 @@ title: PAPS
 tagline: Partage Autour de la Psychomotricité au Sénégal
 
 # Site logo
-logo:
+logo: /images/logo.png
 
 # A description of your site for social meta tag, search engines, and feed.xml
 description: |
@@ -18,7 +18,7 @@ description: |
   
 
 # Url de base -> host par Github pages
-baseurl: https://4mg1n3.github.io/paps
+#baseurl: https://4mg1n3.github.io/paps
 
 repourl: "https://4mg1n3.github.io/paps"
 
