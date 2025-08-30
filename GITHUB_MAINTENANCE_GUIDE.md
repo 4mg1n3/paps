@@ -19,7 +19,7 @@ Ce guide explique comment maintenir et mettre à jour le site web de PAPS direct
 
 1. Allez sur [GitHub.com](https://github.com)
 2. Connectez-vous avec votre compte GitHub
-3. Naviguez vers le repository du site PAPS (l'adresse vous sera fournie par l'administrateur)
+3. Naviguez vers le repository du site [PAPS](https://assopaps.github.io/paps)
 4. Vous verrez tous les fichiers et dossiers du site
 
 ---
@@ -93,6 +93,7 @@ Continuez votre article ici.
 
 Pour ajouter une image dans l'article :
 ![Description de l'image]({{ site.baseurl }}/images/posts/votre-image.jpg)
+(modifiez uniquement la description et le nom de l'image)
 ```
 
 ### Étape 4 : Publier l'article
@@ -136,6 +137,10 @@ Pour ajouter une image dans l'article :
 3. Cliquez sur l'icône crayon (✏️)
 4. Modifiez le contenu
 5. Sauvegardez avec un message de commit approprié
+
+### ⚠️ Important pour les modifications :
+- Ne modifiez que le texte sur la page à moins que vous ne sachiez ce que vous faites.
+- En cas de doute copiez collez le fichier dans un outil IA style chatGPT et expliquez lui quels changements de texte vous voulez, il devrait être capable de vous guider dans les changement ou de vous donner le fichier en retour avec les modifications voulues à copier coller.
 
 ---
 
@@ -210,7 +215,7 @@ Le fichier contient une liste d'éléments comme ceci :
 Pour toute question ou problème technique, contactez l'administrateur du site avec :
 - Une description claire du problème
 - Les étapes que vous avez suivies
-- Une capture d'écran si possible
+- Discord: https://discord.gg/X6hrDsTr
 
 ---
 
