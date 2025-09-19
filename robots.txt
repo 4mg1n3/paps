@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://4mg1n3.github.io/paps/sitemap.xml
+
+# Disallow admin and development files
+Disallow: /_site/
+Disallow: /.git/
+Disallow: /.jekyll-cache/
+Disallow: /node_modules/
+Disallow: /.sass-cache/
+Disallow: /Gemfile
+Disallow: /Gemfile.lock
+Disallow: /_config.yml
+Disallow: /README.md
+Disallow: /GITHUB_MAINTENANCE_GUIDE.md
+
+# Allow important directories
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/

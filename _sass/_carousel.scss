@@ -65,7 +65,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(44, 62, 58, 0.7);
         color: white;
         border: none;
         font-size: 2rem;
@@ -88,7 +88,7 @@
         }
 
         &:hover {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(44, 62, 58, 0.9);
         }
     }
 
@@ -106,7 +106,7 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background: rgba(211, 204, 173, 0.6862745098);
+            background: rgba(140, 188, 182, 0.6);
             cursor: pointer;
 
             &.active {

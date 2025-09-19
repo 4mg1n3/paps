@@ -14,12 +14,45 @@ logo: /images/logo.png
 
 # A description of your site for social meta tag, search engines, and feed.xml
 description: |
-  Partage autour de la psychomotricité au sénégal, PAP'S, Association Loi 1901
+  Association PAPS - Partage Autour de la Psychomotricité au Sénégal. Nous développons la psychomotricité au Sénégal à travers des missions, formations et partenariats locaux.
+
+# SEO and Social Media Configuration
+lang: fr_FR
+locale: fr_FR
+timezone: Europe/Paris
+
+# Social media and SEO
+twitter:
+  username: assopaps
+  card: summary_large_image
+
+facebook:
+  app_id: 
+  publisher: https://www.facebook.com/assopaps
+  admins: 
+
+# Google Analytics (add your tracking ID when available)
+# google_analytics: UA-XXXXXXXX-X
+
+# Search Console verification (add when you set up Google Search Console)
+# google_site_verification: 
+
+# Organization schema markup
+organization:
+  name: "PAPS - Partage Autour de la Psychomotricité au Sénégal"
+  url: "https://4mg1n3.github.io/paps"
+  logo: "https://4mg1n3.github.io/paps/images/logo.png"
+  sameAs:
+    - "https://www.facebook.com/assopaps"
+    - "https://www.instagram.com/assopaps"
+    - "https://www.linkedin.com/company/assopaps"
   
 
-# Url de base -> host par Github pages
-baseurl: https://4mg1n3.github.io/paps
+# Site URL configuration for GitHub Pages
+url: "https://4mg1n3.github.io"
+baseurl: "/paps"
 
+# Repository URL
 repourl: "https://4mg1n3.github.io/paps"
 
 sass:
@@ -68,7 +101,11 @@ linkedin_username: "assopaps"
 # http://jekyllrb.com/docs/pagination/
 paginate: 5
 paginate_path: '/nos-projets/page:num/'
-plugins: [jekyll-paginate]
+plugins: 
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
 permalink: pretty
 markdown: kramdown

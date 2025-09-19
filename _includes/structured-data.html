@@ -1,0 +1,70 @@
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.organization.name }}",
+  "url": "{{ site.url }}{{ site.baseurl }}",
+  "logo": "{{ site.organization.logo }}",
+  "description": "{{ site.description | strip_html | strip_newlines | truncate: 160 }}",
+  "foundingDate": "2020",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Nantes",
+    "addressCountry": "FR"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "asso.paps@gmail.com",
+    "contactType": "customer service",
+    "availableLanguage": "French"
+  },
+  "sameAs": {{ site.organization.sameAs | jsonify }}
+}
+</script>
+
+{% if page.layout == 'post' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title }}",
+  "description": "{{ page.content | strip_html | strip_newlines | truncate: 160 }}",
+  "author": {
+    "@type": "Organization",
+    "name": "{{ site.organization.name }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.organization.name }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.organization.logo }}"
+    }
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | prepend: site.baseurl | prepend: site.url }}"
+  }
+}
+</script>
+{% endif %}
+
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}{{ site.baseurl }}",
+  "description": "{{ site.description | strip_html | strip_newlines | truncate: 160 }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site.url }}{{ site.baseurl }}/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{% endif %}

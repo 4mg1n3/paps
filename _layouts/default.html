@@ -3,17 +3,37 @@
 
 <head>
   <meta charset="utf-8">
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description"
-    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Plugin -->
+  {% seo %}
+  
+  <!-- Additional Meta Tags -->
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="PAPS - Partage Autour de la Psychomotricité au Sénégal">
+  <meta name="language" content="French">
+  <meta name="geo.region" content="FR">
+  <meta name="geo.placename" content="Nantes, France">
+  
+  <!-- Favicon -->
   <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css"
     href="//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic%7COpen+Sans:400,700,400italic,700italic" />
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" />
-  <link rel="canonical" href="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
+  
+  <!-- RSS Feed -->
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} Feed"
     href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Structured Data -->
+  {% include structured-data.html %}
 </head>
 
 <body class="fixed-nav">
