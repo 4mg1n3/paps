@@ -3,6 +3,12 @@ layout: default
 ---
 
 <main class="about-page fade-in-down delay-0_75s">
+<header class="page-header">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% if page.description %}
+  <p class="page-description">{{ page.description }}</p>
+  {% endif %}
+</header>
 <!-- Part 1 -->
 <div class="about-row">
   <h2 class="about-title">{{ page.section1_title }}</h2>
