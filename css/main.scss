@@ -49,7 +49,7 @@
     height: 60px;
     justify-content: flex-end;
     align-items: center;
-    background-color: #8cbcb6;
+    background-color: #a7d3ce;
     margin-bottom: 0px;
 }
 
@@ -71,11 +71,11 @@
         display: flex;
         align-items: center;
         text-decoration: none;
-        color: #2c3e3a;
+        color: $text-color;
     }
 
     a:hover {
-        background-color: #6ba59c;
+        background-color: #8fc0b8;
     }
 
     .home-link {
@@ -203,8 +203,8 @@
     margin: 0;
 
     a {
-        background-color: #e6d8c7;
-        color: #5c5c5c;
+        background-color: #efe4d6;
+        color: #777777;
         display: inline-block;
         padding: 15px 30px;
         text-decoration: none;
@@ -238,7 +238,7 @@
  */
 
 .post {
-    background: #b8d4d0;
+    background: #cfe6e2;
     margin-bottom: 60px;
 }
 
@@ -256,7 +256,7 @@
     margin: 0 0 12px;
 
     a {
-        color: #1a1e22;
+        color: #2d373f;
         text-decoration: none;
 
         &:hover {
@@ -267,7 +267,7 @@
 
 .entry-meta,
 .entry-footer {
-    color: #262727;
+    color: #3d4042;
     font: 14px/1.5 $alt-font;
 }
 
@@ -295,7 +295,7 @@
         width: 28px;
 
         &:hover {
-            background-color: #aeb0b1;
+            background-color: #c3c6c7;
         }
     }
 }
@@ -321,7 +321,7 @@
 }
 
 .more-link {
-    background-color: #5a9b92;
+    background-color: $accent-color;
     border-radius: 6px;
     color: #fff;
     display: inline-block;
@@ -332,7 +332,7 @@
     box-shadow: 0 2px 4px rgba(90, 155, 146, 0.2);
 
     &:hover {
-        background-color: #6ba59c;
+        background-color: lighten($accent-color, 12%);
         color: #fff;
         transform: translateY(-1px);
         box-shadow: 0 4px 8px rgba(90, 155, 146, 0.3);
@@ -344,7 +344,7 @@
 
 .archive-tags-list a,
 .archive-top-link {
-    background-color: #f2f2f2;
+    background-color: #f5f5f5;
     border-radius: 2px;
     color: #606669;
     display: inline-block;
@@ -355,7 +355,7 @@
 }
 
 .archive-top-link {
-    background-color: #aeb0b1;
+    background-color: #c3c6c7;
     color: #fff;
 }
 
@@ -375,7 +375,7 @@
 }
 
 .archive-meta {
-    color: #aeb0b1;
+    color: #c3c6c7;
     font: 14px/1.5 $alt-font;
 }
 
@@ -402,7 +402,7 @@
     display: block;
     width: 100px;
     height: 3px;
-    background: #858585;
+    background: #a0a0a0;
     margin: 0.5rem auto;
 }
 
@@ -549,9 +549,9 @@
 
 .pagination a,
 .post-nav a {
-    background-color: #606669;
+    background-color: #7a8187;
     border-radius: 2px;
-    color: #f2f5f7;
+    color: #f5f7f9;
     padding: 8px 25px;
     text-decoration: none;
 }
@@ -588,14 +588,14 @@
  */
 
 .footer-widgets {
-    background-color: #8cbcb6;
-    color: #2c3e3a;
+    background-color: #a7d3ce;
+    color: $text-color;
     font-size: 16px;
     line-height: 1.5;
 }
 
 .footer-columns {
-    border-bottom: 3px solid #30373d;
+    border-bottom: 3px solid #4a5258;
     padding-top: 45px;
     padding-bottom: 30px;
 }
@@ -605,14 +605,14 @@
 }
 
 .footer-fullwidth .widget {
-    border-bottom: 3px solid #30373d;
+    border-bottom: 3px solid #4a5258;
     margin-bottom: 0;
     padding-bottom: 45px;
     padding-top: 30px;
 }
 
 .widget-title {
-    color: #4d4d4d;
+    color: #6a6a6a;
     font-size: 18px;
     letter-spacing: normal;
     margin-top: 0;
@@ -649,8 +649,8 @@
 }
 
 .widget-recent-posts li {
-    border-bottom: 2px solid #30373d;
-    color: #606669;
+    border-bottom: 2px solid #4a5258;
+    color: #7a8187;
     margin-bottom: 15px;
     padding-bottom: 15px;
     position: relative;
@@ -685,7 +685,7 @@
 }
 
 .widget-tags a {
-    background-color: #8cbcb6;
+    background-color: #a7d3ce;
     border-radius: 2px;
     color: #1a2332;
     display: inline-block;
@@ -711,7 +711,7 @@
  */
 
 .site-footer {
-    background-color: #8cbcb6;
+    background-color: #a7d3ce;
     padding-bottom: 30px;
     padding-top: 30px;
     text-align: center;
@@ -721,7 +721,7 @@
     margin-bottom: 30px;
 
     a {
-        color: #606669;
+        color: #7a8187;
         display: inline-block;
         font-size: 16px;
         height: 24px;
@@ -733,12 +733,12 @@
 }
 
 .copyright {
-    color: #606669;
+    color: #7a8187;
     font-size: 14px;
     line-height: 1.5;
 
     a {
-        color: #aeb0b1;
+        color: #c3c6c7;
         text-decoration: none;
     }
 }
@@ -749,7 +749,7 @@
 }
 
 .top-link {
-    background-color: #606669;
+    background-color: #7a8187;
     border-radius: 2px;
     color: #fff;
     display: inline-block;
@@ -840,7 +840,7 @@
     }
 
     .close-sidebar-button svg {
-        fill: #30373d;
+        fill: #4a5258;
     }
 }
 
@@ -1033,17 +1033,17 @@
     margin-top: 30px;
     margin-bottom: 48px;
     padding-bottom: 24px;
-    border-bottom: 3px solid #5a9b92;
+    border-bottom: 3px solid $accent-color;
 }
 
 .page-title {
     font-size: 42px;
-    color: #1a1e22;
+    color: #2d373f;
     margin: 0 0 12px;
 }
 
 .page-description {
-    color: #606669;
+    color: #7a8187;
     font-size: 18px;
     line-height: 1.5;
     margin: 0;
@@ -1058,7 +1058,7 @@
 }
 
 .project-card {
-    background: #b8d4d0;
+    background: #cfe6e2;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -1108,17 +1108,17 @@
 }
 
 .project-card-title a {
-    color: #1a1e22;
+    color: #2d373f;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .project-card-title a:hover {
-    color: #5a9b92;
+    color: $accent-color;
 }
 
 .project-card-meta {
-    color: #606669;
+    color: #7a8187;
     font: 14px/1.5 $alt-font;
     display: flex;
     gap: 12px;
@@ -1130,7 +1130,7 @@
 }
 
 .project-card-excerpt {
-    color: #30373d;
+    color: #4a5258;
     line-height: 1.6;
     margin-bottom: 20px;
     flex-grow: 1;
@@ -1145,7 +1145,7 @@
 }
 
 .read-more-btn {
-    background-color: #5a9b92;
+    background-color: $accent-color;
     color: #fff;
     padding: 10px 20px;
     border-radius: 4px;
@@ -1156,7 +1156,7 @@
 }
 
 .read-more-btn:hover {
-    background-color: #606669;
+    background-color: #7a8187;
 }
 
 /* Responsive adjustments for project cards */
@@ -1299,14 +1299,14 @@
 .main-title {
     font-size: 3.5rem;
     font-weight: bold;
-    color: #1a1e22;
+    color: #2d373f;
     margin: 0 0 16px;
     letter-spacing: -1px;
 }
 
 .main-subtitle {
     font-size: 1.4rem;
-    color: #606669;
+    color: #7a8187;
     margin: 0 0 24px;
     font-style: italic;
 }
@@ -1382,7 +1382,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #5a9b92;
+    background: $accent-color;
     color: #fff;
     padding: 12px 24px;
     border-radius: 6px;
@@ -1392,7 +1392,7 @@
 }
 
 .nav-link:hover {
-    background: #606669;
+    background: #7a8187;
     transform: translateX(5px);
 }
 
@@ -1408,7 +1408,7 @@
 .section-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #1a1e22;
+    color: #2d373f;
     margin: 0 0 16px;
     text-align: center;
 }
@@ -1421,7 +1421,7 @@
 }
 
 .post-preview-card {
-    background: #b8d4d0;
+    background: #cfe6e2;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -1458,29 +1458,29 @@
 }
 
 .post-preview-title a {
-    color: #1a1e22;
+    color: #2d373f;
     text-decoration: none;
 }
 
 .post-preview-title a:hover {
-    color: #7dd6b1;
+    color: lighten($accent-color, 25%);
 }
 
 .post-preview-excerpt {
-    color: #30373d;
+    color: #4a5258;
     line-height: 1.6;
     margin: 0 0 16px;
 }
 
 .post-preview-link {
-    color: #5a9b92;
+    color: $accent-color;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .post-preview-link:hover {
-    color: #6ba59c;
+    color: lighten($accent-color, 12%);
 }
 
 .view-all-posts {
@@ -1491,7 +1491,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #5a9b92;
+    background: $accent-color;
     color: #fff;
     padding: 16px 32px;
     border-radius: 8px;
@@ -1503,7 +1503,7 @@
 }
 
 .view-all-link:hover {
-    background: #6ba59c;
+    background: lighten($accent-color, 12%);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(90, 155, 146, 0.3);
 }
@@ -1607,13 +1607,13 @@
 
 .contact-header h1 {
     font-size: 3rem;
-    color: #1a1e22;
+    color: #2d373f;
     margin: 0 0 1rem;
 }
 
 .contact-header p {
     font-size: 1.2rem;
-    color: #606669;
+    color: #7a8187;
     line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
@@ -1634,11 +1634,11 @@
     color: #1a1e22;
     margin: 0 0 2rem;
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid #d3ccad;
+    border-bottom: 3px solid #e0d9bf;
 }
 
 .contact-form {
-    background: #e4bfa6;
+    background: #efd1bd;
     padding: 3rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -1651,7 +1651,7 @@
 .form-group label {
     display: block;
     font-weight: bold;
-    color: #1a1e22;
+    color: #2d373f;
     margin-bottom: 0.5rem;
     font-size: 1rem;
 }
@@ -1675,7 +1675,7 @@
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #777158;
+    border-color: #918a6f;
     box-shadow: 0 0 0 3px rgba(119, 113, 88, 0.1);
 }
 
@@ -1692,7 +1692,7 @@
 
 /* Submit button */
 .submit-btn {
-    background: #777158;
+    background: #918a6f;
     color: #fff;
     border: none;
     padding: 16px 32px;
@@ -1709,7 +1709,7 @@
 }
 
 .submit-btn:hover {
-    background: #606669;
+    background: #7a8187;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -1729,7 +1729,7 @@
     gap: 16px;
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background: #e4bfa6;
+    background: #efd1bd;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
@@ -1742,7 +1742,7 @@
     flex-shrink: 0;
     width: 48px;
     height: 48px;
-    background: #777158;
+    background: #918a6f;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1752,24 +1752,24 @@
 
 .contact-details h3 {
     font-size: 1.2rem;
-    color: #1a1e22;
+    color: #2d373f;
     margin: 0 0 0.5rem;
 }
 
 .contact-details p {
     margin: 0;
-    color: #30373d;
+    color: #4a5258;
     line-height: 1.5;
 }
 
 .contact-details a {
-    color: #777158;
+    color: #918a6f;
     text-decoration: none;
     font-weight: bold;
 }
 
 .contact-details a:hover {
-    color: #606669;
+    color: #7a8187;
     text-decoration: underline;
 }
 

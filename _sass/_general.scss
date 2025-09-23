@@ -7,8 +7,8 @@ html {
 }
 
 body {
-    background-color: #8cbcb6af;
-    color: #2c3e3a;
+    background-color: $color1;
+    color: $text-color;
     line-height: 1.66667;
 }
 
@@ -18,7 +18,7 @@ a {
     -webkit-transition: .3s;
     transition: .3s;
     &:hover {
-        color: #aeb0b1;
+        color: #c3c6c7;
         text-decoration: none;
     }
 }
@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #2c3e3a;
+    color: $text-color;
     font-family: $heading-font;
     font-weight: bold;
     line-height: 1.2;
@@ -79,7 +79,7 @@ address {
 
 mark,
 ins {
-    background-color: #f2f2f2;
+    background-color: #f5f5f5;
     color: inherit;
     padding: 0 3px;
     text-decoration: none;
@@ -92,7 +92,7 @@ code {
 }
 
 pre {
-    background-color: #f2f2f2;
+    background-color: #f5f5f5;
     font-size: 14px;
     line-height: 1.5;
     margin: 0 0 24px;
@@ -108,9 +108,9 @@ pre code {
 }
 
 blockquote {
-    border-bottom: 3px solid #f2f2f2;
-    border-top: 3px solid #f2f2f2;
-    color: #2c3e3a;
+    border-bottom: 3px solid #f5f5f5;
+    border-top: 3px solid #f5f5f5;
+    color: $text-color;
     font-size: 24px;
     font-style: italic;
     line-height: 1.4;
@@ -121,7 +121,7 @@ blockquote {
 
 blockquote small,
 blockquote cite {
-    color: #aeb0b1;
+    color: #c3c6c7;
     display: block;
     font-size: 0.83333em;
     margin-top: 12px;
@@ -165,7 +165,7 @@ li > ol {
 }
 
 table {
-    border-bottom: 1px solid #dbdedf;
+    border-bottom: 1px solid #e5e8e9;
     font-size: 16px;
     line-height: 1.5;
     margin: 0 0 24px;
@@ -174,7 +174,7 @@ table {
 }
 
 caption {
-    color: #aeb0b1;
+    color: #c3c6c7;
     font-style: italic;
     margin-bottom: 12px;
     text-align: left;
@@ -182,17 +182,17 @@ caption {
 
 th,
 td {
-    border-top: 1px solid #dbdedf;
+    border-top: 1px solid #e5e8e9;
     padding: 8px 10px;
 }
 
 th {
-    color: #2c3e3a;
+    color: $text-color;
     font-weight: bold;
 }
 
 hr {
-    background-color: #f2f2f2;
+    background-color: #f5f5f5;
     border: 0;
     height: 3px;
     margin: 24px 0;
@@ -213,12 +213,12 @@ button,
 input,
 select,
 textarea {
-    background-color: #dbdedf;
+    background-color: #e5e8e9;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 0;
     border-radius: 2px;
-    color: #606669;
+    color: #7a8187;
     display: inline-block;
     font-family: $alt-font;
     font-size: 16px;
@@ -237,7 +237,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-    background-color: #f2f2f2;
+    background-color: #f5f5f5;
     outline: 0;
 }
 
