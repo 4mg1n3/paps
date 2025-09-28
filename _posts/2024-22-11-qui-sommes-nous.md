@@ -1,23 +1,63 @@
 ---
 layout: post
-title:  "Qui sommes nous - Un bref résumé"
-date:   2024-11-22
+title: "Notre mission : Développer la psychomotricité au Sénégal"
+date: 2024-11-22
 featured_image: image_ballons.jpg
-author: Qqn
+author: Équipe PAPS
+excerpt: "Découvrez comment PAPS œuvre pour développer la psychomotricité au Sénégal à travers des missions, formations et partenariats locaux."
+tags: [psychomotricité, Sénégal, mission, association, développement]
 ---
 
-**Test** 
+# Notre engagement pour la psychomotricité au Sénégal
 
->"test 2" <cite>Albert Einstein</cite>
+PAPS (Partage Autour de la Psychomotricité au Sénégal) est une association créée en 2006 par des étudiantes en psychomotricité de l'Institut Supérieur de Rééducation Psychomotrice (ISRP) de Paris. Notre mission principale est de développer la psychomotricité au Sénégal auprès de tout public.
 
-<p>Lorem ipsum dolor sit amet. Sit minima cumque vel quibusdam incidunt est voluptatibus dicta qui nihil enim. Id quia consequatur in quod modi vel quos dolores nam veniam explicabo et dicta dignissimos ea voluptatem officiis. Id quia dignissimos eos nobis possimus qui quidem fuga sit similique eius et natus maiores et similique aperiam et voluptate beatae. </p><p>Eos atque mollitia sed officiis corporis et asperiores doloremque sed quasi omnis et consequatur velit sed molestias corrupti est obcaecati tempore. Qui debitis ipsa non fuga voluptatum qui minima accusantium. In dicta quidem et error voluptatem est enim delectus est Quis labore et quos excepturi? Et facilis officia non reiciendis omnis et beatae consectetur 33 nemo necessitatibus sit veritatis aspernatur sit quia recusandae sit accusamus sequi. </p><p>Ut voluptatem deserunt eos omnis soluta rem explicabo voluptas et consequatur ducimus aut deserunt aperiam. Ut consequatur tempore qui distinctio quaerat qui adipisci aliquid ut unde nemo ex recusandae asperiores qui neque dolorem? Sed similique molestias eos necessitatibus veniam sed placeat doloremque. Id maiores ullam cum nihil omnis est eaque explicabo non temporibus numquam sed fuga internos. </p>
+## Nos objectifs principaux
 
-<!--more-->
+> "Créer un échange interculturel autour de la psychomotricité et ses pratiques entre le Sénégal et la France."
 
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Get rolled</a> from <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Rick Astley</a> on <a href="https://youtube.com">YouTube</a>.</p>
+### Développement de partenariats locaux
 
+Nous travaillons en étroite collaboration avec divers établissements et associations au Sénégal qui accompagnent des enfants en situation de handicap. Ces partenariats nous permettent de :
 
-{% include image_full.html imageurl="/images/posts/image_table.jpg" title="Table" caption="Trkl" %}
+- Adapter nos pratiques à la culture locale
+- Apprendre des professionnels sénégalais
+- Créer un enrichissement mutuel
 
-<p>Lorem ipsum dolor sit amet. Sit minima cumque vel quibusdam incidunt est voluptatibus dicta qui nihil enim. Id quia consequatur in quod modi vel quos dolores nam veniam explicabo et dicta dignissimos ea voluptatem officiis. Id quia dignissimos eos nobis possimus qui quidem fuga sit similique eius et natus maiores et similique aperiam et voluptate beatae. </p><p>Eos atque mollitia sed officiis corporis et asperiores doloremque sed quasi omnis et consequatur velit sed molestias corrupti est obcaecati tempore. Qui debitis ipsa non fuga voluptatum qui minima accusantium. In dicta quidem et error voluptatem est enim delectus est Quis labore et quos excepturi? Et facilis officia non reiciendis omnis et beatae consectetur 33 nemo necessitatibus sit veritatis aspernatur sit quia recusandae sit accusamus sequi. </p><p>Ut voluptatem deserunt eos omnis soluta rem explicabo voluptas et consequatur ducimus aut deserunt aperiam. Ut consequatur tempore qui distinctio quaerat qui adipisci aliquid ut unde nemo ex recusandae asperiores qui neque dolorem? Sed similique molestias eos necessitatibus veniam sed placeat doloremque. Id maiores ullam cum nihil omnis est eaque explicabo non temporibus numquam sed fuga internos. </p>
+### Missions de terrain
+
+Chaque année, des bénévoles diplômées partent en mission pour :
+
+{% include image_full.html imageurl="/images/posts/image_table.jpg" title="Séance de psychomotricité" caption="Accompagnement d'enfants dans nos centres partenaires au Sénégal" %}
+
+- Accompagner les enfants accueillis dans les centres
+- Partager nos connaissances avec les professionnels sénégalais
+- Apporter un point de vue psychomoteur adapté au contexte local
+
+## L'importance de l'adaptation culturelle
+
+Conscients des différences culturelles entre nos pays, nous nous efforçons d'adapter la prise en soin psychomotrice à la culture locale. Cette approche permet :
+
+1. **Un enrichissement mutuel** entre nos pratiques
+2. **Une meilleure compréhension** des besoins locaux
+3. **Un développement durable** de la psychomotricité au Sénégal
+
+## Matériel et formation
+
+En plus des missions, nous nous engageons à :
+
+- Apporter régulièrement du matériel psychomoteur adapté
+- Organiser des formations pour les professionnels locaux
+- Créer des ressources pédagogiques en français et en wolof
+
+## Rejoignez notre mission
+
+Si vous souhaitez nous aider dans cette mission, plusieurs possibilités s'offrent à vous :
+
+- [Nous soutenir financièrement](/nous-soutenir/)
+- [Participer à nos missions](/contact/)
+- [Devenir bénévole](/contact/)
+
+---
+
+*Pour en savoir plus sur notre association, consultez notre [page dédiée](/qui-sommes-nous/).*
