@@ -11,7 +11,8 @@ Ce guide explique comment maintenir et mettre à jour le site web de PAPS direct
 5. [Modifier les Pages Principales](#modifier-les-pages-principales)
 6. [Modifier les Informations de Contact](#modifier-les-informations-de-contact)
 7. [Modifier le Carrousel de la Page d'Accueil](#modifier-le-carrousel-de-la-page-daccueil)
-8. [Conseils Importants](#conseils-importants)
+8. [Article d'Exemple pour le Contenu](#article-dexemple-pour-le-contenu)
+9. [Conseils Importants](#conseils-importants)
 
 ---
 
@@ -185,6 +186,34 @@ Le fichier contient une liste d'éléments comme ceci :
 1. Ajoutez un nouvel élément à la fin de la liste
 2. Assurez-vous que l'image existe dans `images/carousel/`
 3. Respectez l'indentation (2 espaces)
+
+---
+
+## 📚 Article d'Exemple pour le Contenu
+
+### Accéder à l'article d'exemple
+Pour voir tous les types de contenu possibles sur le site, consultez l'article d'exemple :
+**[Exemple d'article complet - Développement de la psychomotricité au Sénégal](https://assopaps.github.io/paps/2024/11/22/exemple-article-complet/)**
+
+### Ce que vous pouvez apprendre de cet article :
+- **Structure d'un article** : Titres, sous-titres, paragraphes
+- **Mise en forme** : Texte en gras, italique, listes
+- **Images** : Comment intégrer des images avec légendes
+- **Vidéos** : Intégration de vidéos YouTube
+- **Tableaux** : Création de tableaux structurés
+- **Citations** : Utilisation de citations et références
+- **Liens** : Liens internes et externes
+- **Code** : Exemples de code technique
+- **Call-to-action** : Sections d'incitation à l'action
+
+### Comment utiliser cet article :
+1. **Référence** : Consultez-le avant de créer un nouvel article
+2. **Copier-coller** : Adaptez les exemples pour vos propres articles
+3. **Apprentissage** : Comprenez les possibilités du système de contenu
+4. **Templates** : Utilisez les structures comme modèles
+
+### ⚠️ Note importante :
+Cet article est configuré pour ne pas apparaître dans les listes d'articles (il est "caché" du public) mais reste accessible via le lien direct ci-dessus. C'est un outil de référence pour les administrateurs du site.
 
 ---
 

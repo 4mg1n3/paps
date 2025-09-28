@@ -6,6 +6,7 @@ featured_image: image_ballons.jpg
 author: Équipe PAPS
 excerpt: "Cet article démontre les différentes possibilités de contenu sur notre site web, incluant textes, images, vidéos, et bien plus encore."
 tags: [psychomotricité, Sénégal, formation, mission, exemple]
+published: false
 ---
 
 # Introduction
