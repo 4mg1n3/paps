@@ -1,5 +1,14 @@
 <nav class="site-nav" aria-label="Main Menu">
     <input type="checkbox" id="sidebar-active">
+    
+    <!-- Mobile logo with ACCUEIL text -->
+    <div class="mobile-logo-container">
+        <a href="{{ site.baseurl }}/" class="mobile-logo-link">
+            <img src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" class="mobile-logo" />
+            <span class="mobile-logo-text">ACCUEIL</span>
+        </a>
+    </div>
+    
     <label for="sidebar-active" class="open-sidebar-button">
         <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
@@ -15,9 +24,6 @@
                         d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                 </svg>
             </label>
-            <div class="sidebar-logo">
-                <img src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" />
-            </div>
         </div>
 
         {% for link in site.navigation %}

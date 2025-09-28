@@ -6,9 +6,6 @@ permalink: /nous-soutenir/
 
 <style>
 .support-page { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-.page-header { text-align: center; margin-bottom: 4rem; }
-.page-title { font-size: 2.5rem; color: #1a1e22; margin: 0 0 1rem; }
-.page-description { font-size: 1.2rem; color: #606669; line-height: 1.6; max-width: 700px; margin: 0 auto; }
 .support-content { margin-top: 3rem; }
 .support-section { margin-bottom: 3rem; background: #fff; border-radius: 12px; padding: 2.5rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); }
 .support-section-title { font-size: 1.8rem; color: #1a1e22; margin: 0 0 1.5rem; font-weight: bold; text-align: center; }

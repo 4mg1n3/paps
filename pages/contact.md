@@ -24,12 +24,12 @@ permalink: /contact/
 .contact-icon { flex-shrink: 0; width: 48px; height: 48px; background: #5a9b92; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; }
 .contact-details h3 { font-size: 1.2rem; color: #1a1e22; margin: 0 0 0.5rem; }
 .contact-details p { margin: 0; color: #30373d; line-height: 1.5; }
-.contact-details a { color: #5a9b92; text-decoration: none; font-weight: bold; }
+.contact-details a { color: #30373d; text-decoration: none; }
 .contact-details a:hover { color: #6ba59c; text-decoration: underline; }
 .social-contact { background: #b8d4d0; padding: 1.5rem; border-radius: 8px; margin-top: 1rem; }
 .social-contact h3 { font-size: 1.2rem; color: #1a1e22; margin: 0 0 1rem; }
 .social-links-contact { display: flex; flex-direction: column; gap: 12px; }
-.social-links-contact a { display: flex; align-items: center; gap: 12px; color: #5a9b92; text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 6px; transition: all 0.3s ease; }
+.social-links-contact a { display: flex; align-items: center; gap: 12px; color:rgb(50, 106, 122); text-decoration: none; font-weight: bold; padding: 8px 12px; border-radius: 6px; transition: all 0.3s ease; }
 .social-links-contact a:hover { background: rgba(90, 155, 146, 0.1); color: #6ba59c; transform: translateX(5px); }
 @media (max-width: 768px) { .contact-page { padding: 1rem; } .contact-form { padding: 1.5rem; } }
 </style>

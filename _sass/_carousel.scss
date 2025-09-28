@@ -6,16 +6,23 @@
     margin-bottom: 5vh;
     overflow: hidden;
 
-    // Fixed aspect ratio container
+    // Dynamic sizing to fit content
     width: 100%;
-    aspect-ratio: 16/9; // Fixed 16:9 aspect ratio
     max-width: 1200px; // Maximum width for large screens
+    height: auto; // Let content determine height
+    min-height: 200px; // Minimum height to ensure visibility
+    max-height: 80vh; // Maximum height relative to viewport
+    
+    // Add visible border
+    border: 3px solid #5a9b92;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
     .carousel {
         display: flex;
         transition: transform 0.5s ease;
         width: 100%;
-        height: 100%;
+        height: auto; // Let content determine height
     }
 
     .carousel-item {
@@ -24,41 +31,40 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgba(0, 0, 0, 0.05);
-        height: 100%;
+        height: auto; // Let content determine height
         overflow: hidden;
+        padding: 20px; // Add padding inside the border
 
         .carousel-image {
             object-fit: contain;
-            max-width: 100%;
-            max-height: 100%;
+            max-width: calc(100% - 40px); // Account for padding
+            max-height: 70vh; // Maximum height relative to viewport
+            border-radius: 4px;
+            display: block;
+            margin: auto;
+            height: auto; // Let image determine its own height
             
             // Spacing based on image format and dimensions
             &[data-format="portrait"] {
-                height: 100%;
                 width: auto;
-                // Add horizontal spacing for portrait images
-                margin: 0 auto;
+                max-width: calc(100% - 40px);
+                max-height: 70vh;
             }
 
             &[data-format="landscape"] {
-                width: 100%;
+                width: calc(100% - 40px);
                 height: auto;
-                // Add vertical spacing for landscape images
-                margin: auto 0;
+                max-width: calc(100% - 40px);
             }
 
             &[data-format="square"] {
                 // Square images get balanced spacing
-                max-width: 100%;
-                max-height: 100%;
+                max-width: calc(100% - 40px);
+                max-height: 70vh;
                 width: auto;
                 height: auto;
-                margin: auto;
             }
         }
-
-
     }
 
     .carousel-control {
@@ -94,7 +100,7 @@
 
     .carousel-indicators {
         position: absolute;
-        bottom: 1rem;
+        bottom: 0.5rem; // Moved down slightly
         left: 0;
         right: 0;
         display: flex;
@@ -103,14 +109,23 @@
         z-index: 8;
 
         .indicator {
-            width: 10px;
-            height: 10px;
+            width: 12px; // Slightly larger for better visibility
+            height: 12px;
             border-radius: 50%;
-            background: rgba(140, 188, 182, 0.6);
+            background: rgba(0, 0, 0, 0.4); // More contrasted inactive state
             cursor: pointer;
+            transition: all 0.3s ease; // Smooth transition
+            border: 2px solid rgba(255, 255, 255, 0.8); // White border for contrast
 
             &.active {
                 background: $accent-color;
+                border: 2px solid rgba(255, 255, 255, 1); // Brighter border when active
+                transform: scale(1.1); // Slightly larger when active
+            }
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.6);
+                transform: scale(1.05);
             }
         }
     }
@@ -119,20 +134,80 @@
 // Responsive adjustments
 @media (max-width: 768px) {
     .carousel-container {
-        // Adjust aspect ratio for mobile - slightly more square
-        aspect-ratio: 4/3;
+        min-height: 150px;
+        max-height: 60vh;
+        border-width: 2px;
+
+        .carousel-item {
+            padding: 15px;
+            
+            .carousel-image {
+                max-width: calc(100% - 30px);
+                max-height: 60vh;
+                
+                &[data-format="portrait"] {
+                    width: auto;
+                    max-width: calc(100% - 30px);
+                    max-height: 60vh;
+                }
+
+                &[data-format="landscape"] {
+                    width: calc(100% - 30px);
+                    max-width: calc(100% - 30px);
+                }
+
+                &[data-format="square"] {
+                    max-width: calc(100% - 30px);
+                    max-height: 60vh;
+                }
+            }
+        }
 
         .carousel-control {
             font-size: 1.5rem;
             width: 30px;
             height: 30px;
         }
+
+        .carousel-indicators {
+            bottom: 0.3rem; // Adjusted for mobile
+        }
     }
 }
 
 @media (max-width: 480px) {
     .carousel-container {
-        // More square aspect ratio for small screens
-        aspect-ratio: 1.2/1;
+        min-height: 120px;
+        max-height: 50vh;
+        border-width: 2px;
+
+        .carousel-item {
+            padding: 10px;
+            
+            .carousel-image {
+                max-width: calc(100% - 20px);
+                max-height: 50vh;
+                
+                &[data-format="portrait"] {
+                    width: auto;
+                    max-width: calc(100% - 20px);
+                    max-height: 50vh;
+                }
+
+                &[data-format="landscape"] {
+                    width: calc(100% - 20px);
+                    max-width: calc(100% - 20px);
+                }
+
+                &[data-format="square"] {
+                    max-width: calc(100% - 20px);
+                    max-height: 50vh;
+                }
+            }
+        }
+
+        .carousel-indicators {
+            bottom: 0.2rem; // Further adjusted for small mobile
+        }
     }
 }

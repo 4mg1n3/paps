@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-color: #8cbcb6af;
+    background-color: #9fdfd891;
     color: #2c3e3a;
     line-height: 1.66667;
 }
@@ -510,6 +510,56 @@ a.post-thumbnail:hover img {
 .highlight .vg { color: #22b3eb } /* Name.Variable.Global */
 .highlight .vi { color: #22b3eb } /* Name.Variable.Instance */
 .highlight .il { color: #2aa198 } /* Literal.Number.Integer.Long */
+
+/* Page Header Styles */
+.page-header {
+    text-align: center;
+    border-bottom: 3px solid #5a9b92;
+    margin-bottom: 4rem;
+    margin-top: 30px;
+    padding-bottom: 24px;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e3a;
+    margin: 0 0 1rem;
+    letter-spacing: -1px;
+}
+
+.page-description {
+    font-size: 1.2rem;
+    color: #606669;
+    max-width: 700px;
+    margin: 0 auto;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+/* Main content spacing */
+.content {
+    margin-top: 2rem;
+}
+
+/* Logo section styling */
+.logo-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.main-logo {
+    max-width: 250px;
+    height: auto;
+    opacity: 0.95;
+    transition: opacity 0.3s ease;
+}
+
+.main-logo:hover {
+    opacity: 1;
+}
 
 /* Animations */
 .fade-in-down {

@@ -7,10 +7,10 @@ permalink: /nos-projets/
 <style>
 .projects-page { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 .page-header { text-align: center; margin-bottom: 4rem; }
-.page-title { font-size: 2.5rem; color: #1a1e22; margin: 0 0 1rem; }
+.page-title { font-size: 2rem; color: #2c3e3a; margin: 0 0 1rem; }
 .page-description { font-size: 1.2rem; color: #606669; line-height: 1.6; max-width: 700px; margin: 0 auto; }
 .projects-list { display: flex; flex-direction: column; gap: 4rem; margin-top: 3rem; }
-.project-item { display: flex; align-items: center; gap: 3rem; background: #fff; border-radius: 16px; padding: 2rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+.project-item { display: flex; align-items: center; gap: 3rem; background:rgba(145, 175, 169, 0.47); border-radius: 16px; padding: 2rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
 .project-item:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); }
 .project-item.reverse { flex-direction: row-reverse; }
 .project-image { flex: 0 0 300px; height: 250px; border-radius: 12px; overflow: hidden; background: #e4bfa6; display: flex; align-items: center; justify-content: center; }
@@ -19,12 +19,12 @@ permalink: /nos-projets/
 .project-content { flex: 1; }
 .project-card-icon { width: 60px; height: 60px; background: #e4bfa6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: #777158; }
 .project-card-title { font-size: 1.8rem; color: #1a1e22; margin: 0 0 0.5rem; font-weight: bold; line-height: 1.3; }
-.project-card-subtitle { font-size: 1.1rem; color: #777158; margin: 0 0 1.5rem; font-weight: 500; font-style: italic; }
+.project-card-subtitle { font-size: 1.1rem; color:rgb(29, 36, 54); margin: 0 0 1.5rem; font-weight: 500; font-style: italic; }
 .project-card-description { color: #606669; line-height: 1.7; margin-bottom: 1.5rem; font-size: 1.05rem; text-align: justify; text-justify: inter-word; }
 .project-card-features { list-style: none; padding: 0; margin: 0 0 1.5rem 0; }
 .project-card-features li { padding: 0.5rem 0; color: #30373d; position: relative; padding-left: 1.8rem; font-size: 1rem; line-height: 1.4; }
-.project-card-features li:before { content: "✓"; position: absolute; left: 0; color: #777158; font-weight: bold; font-size: 1rem; }
-@media (max-width: 768px) { 
+.project-card-features li:before { content: "•"; position: absolute; left: 0; color:rgb(80, 131, 138); font-weight: bold; font-size: 1.2rem; }
+@media (max-width: 960px) { 
   .projects-page { padding: 1.5rem; } 
   .projects-list { gap: 2.5rem; } 
   .project-item, .project-item.reverse { flex-direction: column-reverse; gap: 1.5rem; text-align: center; } 

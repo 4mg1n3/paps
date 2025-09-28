@@ -2,28 +2,7 @@
 layout: default
 ---
 
-<!-- Enhanced Carousel -->
-<div class="carousel-container enhanced">
-    <div class="carousel">
-        {% for item in site.data.carousel_items %}
-        <div class="carousel-item">
-            <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.alt }}" class="carousel-image"
-                data-format="{{ item.format }}" loading="lazy">
-        </div>
-        {% endfor %}
-    </div>
-    <button class="carousel-control prev" aria-label="Diapositive précédente">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-        </svg>
-    </button>
-    <button class="carousel-control next" aria-label="Diapositive suivante">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
-        </svg>
-    </button>
-    <div class="carousel-indicators"></div>
-</div>
+
 
 <!-- Main Content -->
 <main class="content fade-in-down delay-0_75s">
@@ -35,7 +14,35 @@ layout: default
                 <p class="main-subtitle">Partage Autour de la Psychomotricité au Sénégal</p>
                 <div class="title-accent"></div>
             </header>
+            
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <img src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" class="main-logo" />
+            </div>
         </section>
+
+        <!-- Enhanced Carousel -->
+        <div class="carousel-container enhanced">
+            <div class="carousel">
+                {% for item in site.data.carousel_items %}
+                <div class="carousel-item">
+                    <img src="{{ site.baseurl }}{{ item.image }}" alt="{{ item.alt }}" class="carousel-image"
+                        data-format="{{ item.format }}" loading="lazy">
+                </div>
+                {% endfor %}
+            </div>
+            <button class="carousel-control prev" aria-label="Diapositive précédente">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+            </button>
+            <button class="carousel-control next" aria-label="Diapositive suivante">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+            </button>
+            <div class="carousel-indicators"></div>
+        </div>
 
         <!-- Navigation Links Section -->
         <section class="navigation-links">
