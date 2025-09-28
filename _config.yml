@@ -40,8 +40,8 @@ facebook:
 # Organization schema markup
 organization:
   name: "PAPS - Partage Autour de la Psychomotricité au Sénégal"
-  url: "https://4mg1n3.github.io/paps"
-  logo: "https://4mg1n3.github.io/paps/images/logo.png"
+  url: "https://assopaps.github.io/paps"
+  logo: "https://assopaps.github.io/paps/images/logo.png"
   sameAs:
     - "https://www.facebook.com/assopaps"
     - "https://www.instagram.com/assopaps"
@@ -49,11 +49,11 @@ organization:
   
 
 # Site URL configuration for GitHub Pages
-url: "https://4mg1n3.github.io"
+url: "https://assopaps.github.io"
 baseurl: "/paps"
 
 # Repository URL
-repourl: "https://4mg1n3.github.io/paps"
+repourl: "https://assopaps.github.io/paps"
 
 sass:
   sass_dir: _sass

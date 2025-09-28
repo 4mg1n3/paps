@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://4mg1n3.github.io/paps/sitemap.xml
+Sitemap: https://assopaps.github.io/paps/sitemap.xml
 
 # Disallow admin and development files
 Disallow: /_site/
